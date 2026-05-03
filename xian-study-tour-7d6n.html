@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长安盛世探索营 · 7日6晚西安研学方案 | Xi'an Historical Discovery Camp</title>
+
+  <!-- Open Graph / 微信分享卡片 -->
+  <meta property="og:title" content="长安盛世探索营 · 7日6晚西安研学方案">
+  <meta property="og:description" content="穿越秦朝风云，见证兵马俑奇迹！7天6晚深度研学，探寻十三朝古都的文化瑰宝">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://gaomianribao.github.io/study-tour/xian-study-tour-7d6n.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="研学探索营">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="长安盛世探索营 · 7日6晚西安研学方案">
+  <meta name="twitter:description" content="穿越秦朝风云，见证兵马俑奇迹！7天6晚深度研学，探寻十三朝古都">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&h=630&fit=crop">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --dark: #1A1A2E;
+      --dark2: #2C3E50;
+      --red: #8B1A1A;
+      --cream: #FDF6E3;
+      --cream2: #F5F0E8;
+      --white: #fff;
+      --border: #E8DCC8;
+      --text: #2C3E50;
+      --muted: #7F8C8D;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ─── HEADER ─── */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(26, 26, 46, 0.96);
+      backdrop-filter: blur(8px);
+      padding: 14px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(201,168,76,0.35);
+    }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
+    .logo-circle {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900; color: #fff;
+      font-family: "Playfair Display", serif;
+    }
+    .logo-text {
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 16px; letter-spacing: 2px;
+    }
+    .logo-text small { display: block; font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 1px; font-family: "Noto Sans SC", sans-serif; }
+    .header-nav { display: flex; gap: 28px; }
+    .header-nav a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 13px; letter-spacing: 1px;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { color: var(--gold); }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .menu-toggle span {
+      display: block; width: 24px; height: 2px;
+      background: var(--gold); margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: 
+        linear-gradient(to bottom, rgba(20,10,5,0.78) 0%, rgba(20,10,5,0.45) 50%, rgba(20,10,5,0.90) 100%),
+        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 80px 40px 160px;
+      max-width: 900px;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      color: var(--gold); font-size: 12px; letter-spacing: 4px;
+      text-transform: uppercase;
+      border: 1px solid rgba(201,168,76,0.5);
+      padding: 6px 20px; border-radius: 30px;
+      margin-bottom: 28px;
+      font-family: "Playfair Display", serif;
+    }
+    .hero-title-cn {
+      font-family: "Noto Serif SC", serif;
+      font-size: 52px; font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 6px;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.6);
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .hero-company {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .hero-title-en {
+      font-family: "Playfair Display", serif;
+      font-size: 22px; font-style: italic;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 28px;
+    }
+    .hero-subtitle {
+      font-size: 16px; color: rgba(255,255,255,0.7);
+      max-width: 600px; margin: 0 auto 16px;
+      line-height: 1.9;
+    }
+    .hero-subtitle .en { color: rgba(255,255,255,0.5); font-size: 13px; display: block; margin-top: 6px; }
+    .btn-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      color: #fff; font-size: 16px; font-weight: 600;
+      padding: 16px 48px; border-radius: 50px;
+      text-decoration: none; letter-spacing: 2px;
+      box-shadow: 0 8px 32px rgba(201,168,76,0.5);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.6); }
+    .hero-stats {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      display: flex;
+      background: rgba(26,26,46,0.85);
+      border-top: 1px solid rgba(201,168,76,0.4);
+      backdrop-filter: blur(6px);
+    }
+    .stat-item {
+      flex: 1; padding: 22px 16px; text-align: center;
+      border-right: 1px solid rgba(201,168,76,0.25);
+      color: #fff;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { display: block; font-size: 20px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.55); letter-spacing: 1px; }
+
+    /* ─── SECTION BASE ─── */
+    section { padding: 0; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-header { text-align: center; padding: 70px 40px 48px; }
+    .section-tag {
+      display: inline-block; font-size: 11px; letter-spacing: 3px;
+      color: var(--gold); text-transform: uppercase;
+      border: 1px solid var(--gold); padding: 4px 16px; border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .section-title-cn {
+      font-size: 36px; font-family: "Noto Serif SC", serif;
+      color: var(--dark); letter-spacing: 4px; margin-bottom: 8px;
+    }
+    .section-title-en {
+      font-size: 15px; color: var(--gold); letter-spacing: 2px;
+      font-family: "Playfair Display", serif; font-style: italic;
+    }
+    .section-desc {
+      font-size: 14px; color: var(--muted); margin-top: 14px;
+      max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.8;
+    }
+    .section-light { background: var(--dark); }
+    .section-light .section-title-cn { color: #fff; }
+    .section-light .section-title-en { color: var(--gold); }
+    .section-light .section-desc { color: rgba(255,255,255,0.5); }
+
+    /* ─── OVERVIEW ─── */
+    .overview-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; padding: 0 40px 60px;
+    }
+    .overview-text { }
+    .overview-intro {
+      font-size: 15px; line-height: 2; color: var(--text);
+      margin-bottom: 24px;
+    }
+    .overview-intro .en { color: var(--muted); font-size: 13px; display: block; margin-top: 8px; }
+    .overview-quote {
+      border-left: 4px solid var(--gold);
+      padding: 16px 20px;
+      background: var(--cream2);
+      border-radius: 0 8px 8px 0;
+      font-family: "Noto Serif SC", serif;
+      font-size: 15px; color: var(--dark);
+      font-style: italic;
+    }
+    .overview-quote .en { font-size: 12px; color: var(--muted); margin-top: 6px; display: block; font-style: normal; }
+    .info-cards { display: flex; flex-direction: column; gap: 16px; }
+    .info-card {
+      background: var(--white); border-radius: 12px;
+      padding: 20px 24px; border: 1px solid var(--border);
+      transition: box-shadow .2s;
+    }
+    .info-card:hover { box-shadow: 0 4px 20px rgba(201,168,76,0.15); }
+    .info-card.highlight { background: linear-gradient(135deg, var(--dark), var(--dark2)); }
+    .info-card.highlight .info-label { color: rgba(255,255,255,0.5); }
+    .info-card.highlight .info-value { color: var(--gold); }
+    .info-card.highlight .info-sub { color: rgba(255,255,255,0.4); }
+    .info-label { font-size: 11px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 4px; }
+    .info-value { font-size: 16px; font-weight: 600; color: var(--dark); display: block; margin-bottom: 4px; font-family: "Noto Serif SC", serif; }
+    .info-sub { font-size: 12px; color: var(--muted); }
+
+    /* ─── TIMELINE ─── */
+    .timeline-section { background: var(--dark); }
+    .timeline-scroll { overflow-x: auto; padding: 0 40px 60px; }
+    .timeline-track {
+      display: flex; min-width: max-content;
+      position: relative; padding-top: 20px;
+    }
+    .timeline-track::before {
+      content: ''; position: absolute;
+      top: 52px; left: 60px; right: 60px;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), rgba(201,168,76,0.3), var(--gold));
+    }
+    .tl-item {
+      width: 170px; text-align: center;
+      padding: 0 16px; position: relative;
+    }
+    .tl-badge {
+      width: 66px; height: 66px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      color: #fff; font-weight: 700; font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 16px rgba(201,168,76,0.5);
+      letter-spacing: 1px; position: relative; z-index: 1;
+    }
+    .tl-cn { font-family: "Noto Serif SC", serif; font-size: 15px; color: var(--gold); margin-bottom: 6px; }
+    .tl-en { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.4; }
+    .tl-loc { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 6px; }
+
+    /* ─── ITINERARY DETAIL ─── */
+    .itinerary-detail { background: var(--cream2); }
+    .days-wrap { padding: 0 40px 60px; max-width: 1000px; margin: 0 auto; }
+    .day-card {
+      background: var(--white); border-radius: 16px;
+      margin-bottom: 28px; overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border: 1px solid var(--border);
+    }
+    .day-header {
+      display: flex; align-items: center; gap: 20px;
+      padding: 24px 32px;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+      border-bottom: 3px solid var(--gold);
+    }
+    .day-num {
+      font-size: 72px; font-weight: 900;
+      color: rgba(201,168,76,0.22); line-height: 1;
+      font-family: "Playfair Display", serif;
+      min-width: 80px;
+    }
+    .day-info { }
+    .day-title {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+    }
+    .day-label { font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 2px; }
+    .day-name-cn { font-size: 24px; color: var(--gold); font-family: "Noto Serif SC", serif; }
+    .day-name-en { font-size: 13px; color: rgba(255,255,255,0.5); display: block; margin-top: 4px; }
+    .day-theme { color: rgba(255,255,255,0.35); font-size: 12px; margin-top: 8px; letter-spacing: 2px; }
+    .day-activities { padding: 24px 32px; }
+    .act-item {
+      display: grid; grid-template-columns: 64px 18px 1fr;
+      gap: 0 14px; margin-bottom: 22px; align-items: start;
+    }
+    .act-item:last-child { margin-bottom: 0; }
+    .act-time {
+      font-size: 12px; color: var(--gold); font-weight: 600;
+      text-align: right; padding-top: 3px;
+    }
+    .act-dot-wrap { display: flex; flex-direction: column; align-items: center; }
+    .act-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: 4px;
+    }
+    .act-line { width: 2px; background: var(--border); flex: 1; min-height: 30px; }
+    .act-item:last-child .act-line { display: none; }
+    .act-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .act-title { font-size: 15px; font-weight: 600; color: var(--dark); }
+    .act-title-en { font-size: 12px; color: var(--muted); display: block; }
+    .act-desc { font-size: 13px; color: var(--text); line-height: 1.8; }
+    .act-desc .en { color: var(--muted); font-size: 12px; display: block; margin-top: 4px; }
+    .act-tag {
+      font-size: 11px; padding: 2px 9px; border-radius: 20px;
+      font-weight: 500; white-space: nowrap;
+    }
+    .tag-logistics   { background: #ECF0F1; color: #7F8C8D; }
+    .tag-culture     { background: #FDF2E9; color: #8B4513; }
+    .tag-history     { background: #EBF5FB; color: #2E4057; }
+    .tag-tech        { background: #EBF5FB; color: #1B6CA8; }
+    .tag-intl        { background: #EAFAF1; color: #1E8449; }
+    .tag-art         { background: #F5EEF8; color: #6C3483; }
+    .tag-sports      { background: #FEF9E7; color: #B7950B; }
+
+    /* ─── HIGHLIGHTS ─── */
+    .highlights-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; padding: 0 40px 60px;
+    }
+    .hc-card {
+      background: var(--white); border-radius: 16px;
+      padding: 32px 24px; border: 1px solid var(--border);
+      transition: transform .3s, box-shadow .3s;
+      position: relative; overflow: hidden;
+    }
+    .hc-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(to right, var(--gold), var(--gold-light));
+    }
+    .hc-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(201,168,76,0.2); }
+    .hc-card.dark { background: linear-gradient(135deg, var(--dark), var(--dark2)); border-color: var(--gold); }
+    .hc-card.dark .hc-title { color: var(--gold); }
+    .hc-card.dark .hc-desc { color: rgba(255,255,255,0.65); }
+    .hc-card.dark .hc-en { color: rgba(255,255,255,0.35); }
+    .hc-icon { font-size: 42px; margin-bottom: 18px; }
+    .hc-title { font-size: 19px; color: var(--dark); font-family: "Noto Serif SC", serif; margin-bottom: 8px; }
+    .hc-en { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-style: italic; }
+    .hc-desc { font-size: 13px; color: var(--text); line-height: 1.8; }
+    .hc-badge {
+      display: inline-block; background: var(--gold); color: #fff;
+      font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-top: 12px;
+    }
+
+    /* ─── SAFETY ─── */
+    .safety-section { background: var(--cream); }
+    .safety-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 20px; padding: 0 40px 60px;
+    }
+    .safety-card {
+      text-align: center; padding: 32px 20px;
+      background: var(--white); border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: box-shadow .2s;
+    }
+    .safety-card:hover { box-shadow: 0 6px 24px rgba(201,168,76,0.15); }
+    .safety-icon { font-size: 36px; display: block; margin-bottom: 14px; }
+    .safety-title { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 8px; font-family: "Noto Serif SC", serif; }
+    .safety-desc { font-size: 13px; color: var(--text); line-height: 1.7; }
+    .safety-en { font-size: 11px; color: var(--muted); display: block; margin-top: 6px; font-style: italic; }
+
+    /* ─── PRICING ─── */
+    .pricing-section { background: var(--dark); }
+    .pricing-wrap { padding: 0 40px 70px; max-width: 900px; margin: 0 auto; }
+    .pricing-card {
+      background: var(--white); border-radius: 24px;
+      overflow: hidden; box-shadow: 0 8px 48px rgba(0,0,0,0.25);
+      border: 2px solid var(--gold);
+    }
+    .price-head {
+      background: linear-gradient(135deg, #0f0f22, var(--dark2));
+      padding: 52px 48px; text-align: center;
+    }
+    .price-label { color: rgba(255,255,255,0.55); font-size: 14px; margin-bottom: 16px; letter-spacing: 1px; }
+    .price-label .en { display: block; font-size: 12px; margin-top: 4px; }
+    .price-amount { display: flex; align-items: flex-end; justify-content: center; gap: 4px; }
+    .price-currency { font-size: 28px; color: var(--gold); font-weight: 700; padding-bottom: 8px; }
+    .price-number {
+      font-size: 72px; font-weight: 900; color: var(--gold);
+      font-family: "Playfair Display", serif; line-height: 1;
+    }
+    .price-unit { font-size: 20px; color: rgba(255,255,255,0.5); padding-bottom: 8px; }
+    .price-sub { color: rgba(255,255,255,0.4); font-size: 13px; margin-top: 14px; }
+    .price-body { display: grid; grid-template-columns: 1fr 1fr; }
+    .includes-col { padding: 36px 32px; border-right: 1px solid var(--border); }
+    .excludes-col { padding: 36px 32px; background: #FFFDF7; }
+    .col-title {
+      font-size: 13px; font-weight: 700; letter-spacing: 2px;
+      color: var(--dark); margin-bottom: 20px;
+      padding-bottom: 10px; border-bottom: 2px solid var(--gold);
+    }
+    .col-title .en { font-size: 11px; color: var(--muted); font-weight: 400; display: block; margin-top: 2px; }
+    .inc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .inc-list li {
+      font-size: 13px; color: var(--text);
+      padding: 8px 12px; border-radius: 8px;
+      background: var(--cream); display: flex; align-items: flex-start; gap: 8px;
+      line-height: 1.5;
+    }
+    .inc-list li .en { font-size: 11px; color: var(--muted); display: block; }
+    .exc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .exc-list li {
+      font-size: 13px; color: var(--text);
+      padding: 8px 12px; border-radius: 8px;
+      background: #FFF5F5;
+    }
+    .exc-list li .en { font-size: 11px; color: var(--muted); display: block; }
+    .price-extras {
+      padding: 24px 32px;
+      background: linear-gradient(135deg, var(--dark), var(--dark2));
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 12px;
+    }
+    .extra-item {
+      color: rgba(255,255,255,0.7); font-size: 13px;
+      padding: 10px 16px; border-radius: 8px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .extra-item .en { font-size: 11px; color: rgba(255,255,255,0.35); display: block; margin-top: 2px; }
+
+    /* ─── FOOTER ─── */
+    .site-footer {
+      background: #0A0A14;
+      text-align: center; padding: 60px 40px;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+    .footer-logo-circle {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 900; color: #fff;
+      font-family: "Playfair Display", serif;
+      margin: 0 auto 16px;
+    }
+    .footer-brand { color: var(--gold); font-size: 20px; font-family: "Noto Serif SC", serif; letter-spacing: 3px; margin-bottom: 6px; }
+    .footer-sub { color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 2px; margin-bottom: 20px; }
+    .footer-project { color: rgba(255,255,255,0.55); font-size: 14px; margin-bottom: 8px; }
+    .footer-note { color: rgba(255,255,255,0.25); font-size: 12px; }
+    .footer-divider { width: 80px; height: 1px; background: rgba(201,168,76,0.3); margin: 24px auto; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-title-cn { font-size: 38px; }
+      .highlights-grid { grid-template-columns: repeat(2,1fr); }
+      .safety-grid { grid-template-columns: repeat(2,1fr); }
+      .overview-wrap { grid-template-columns: 1fr; }
+      .menu-toggle { display: block; }
+      .header-nav {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(26,26,46,0.98);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-bottom: 1px solid rgba(201,168,76,0.35);
+      }
+      .header-nav.active { display: flex; }
+    }
+    @media (max-width: 768px) {
+      .hero-title-cn { font-size: 24px; letter-spacing: 2px; }
+      .hero-company { font-size: 12px; letter-spacing: 1px; margin-bottom: 8px; }
+      .hero-title-en { font-size: 14px; }
+      .hero-content { padding: 20px 16px 300px; }
+      .hero-subtitle { font-size: 13px; padding: 0 5px; }
+      .hero-subtitle br { display: none; }
+      .btn-cta { padding: 12px 28px; font-size: 13px; }
+      .hero-stats { flex-direction: column; }
+      .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(201,168,76,0.25);
+        padding: 10px 16px;
+      }
+      .stat-num { font-size: 13px; margin-bottom: 2px; }
+      .stat-label { font-size: 11px; }
+      .highlights-grid { grid-template-columns: 1fr; padding: 0 20px 40px; }
+      .safety-grid { grid-template-columns: 1fr; padding: 0 20px 40px; }
+      .days-wrap { padding: 0 16px 40px; }
+      .day-header { padding: 18px 20px; }
+      .day-activities { padding: 16px 20px; }
+      .day-num { font-size: 48px; }
+      .act-item { grid-template-columns: 52px 16px 1fr; gap: 0 10px; }
+      .price-body { grid-template-columns: 1fr; }
+      .price-extras { grid-template-columns: 1fr; }
+      .includes-col { border-right: none; border-bottom: 1px solid var(--border); }
+      .pricing-wrap { padding: 0 16px 50px; }
+      .overview-wrap { padding: 0 20px 40px; }
+      .section-header { padding: 50px 20px 36px; }
+      .price-amount { flex-direction: column; gap: 10px; }
+      .price-currency { font-size: 24px; }
+      .price-number { font-size: 42px; }
+      .price-unit { font-size: 14px; }
+      .price-usd { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-circle">秦</div>
+    <div class="logo-text">
+      XI'AN STUDY TOUR
+      <small>长安盛世探索营</small>
+    </div>
+  </div>
+  <nav class="header-nav" id="headerNav">
+    <a href="#overview">项目概述 Overview</a>
+    <a href="#itinerary">行程安排 Itinerary</a>
+    <a href="#highlights">课程亮点 Highlights</a>
+    <a href="#pricing">费用说明 Pricing</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="菜单 Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">✦ CAMBODIA × XI'AN · STUDY TOUR 2025 ✦</div>
+    <h1 class="hero-title-cn">长安盛世探索营</h1>
+    <p class="hero-company">新华之窗（北京）教育科技有限公司</p>
+    <p class="hero-title-en">Xi'an Imperial Capital · Silk Road Deep Cultural Discovery Camp</p>
+    <p class="hero-subtitle">
+      7日6晚 · 柬埔寨学生走进千年古都西安深度研学<br>
+      <span class="en">7 Days 6 Nights · Cambodian Students Immersive Study Tour to Xi'an, the Ancient Capital of China</span>
+    </p>
+    <a href="#pricing" class="btn-cta">立即报名咨询 · Enroll Now</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">7天6晚</span>
+      <span class="stat-label">7 Days 6 Nights</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">¥17,999</span>
+      <span class="stat-label">Per Person · 每人</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">西安 Xi'an</span>
+      <span class="stat-label">研学目的地 Destination</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">大/中/小通用</span>
+      <span class="stat-label">All School Levels</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">柬埔寨出发</span>
+      <span class="stat-label">From Cambodia</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROJECT OVERVIEW ═══════════════════════ -->
+<section id="overview" style="background: var(--cream);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Project Overview</span>
+      <h2 class="section-title-cn">项目概述</h2>
+      <p class="section-title-en">Program Overview</p>
+    </div>
+    <div class="overview-wrap">
+      <div class="overview-text">
+        <p class="overview-intro">
+          本项目专为柬埔寨中小学及大学学生设计，是一次走进中华文明发源地——古都西安的深度历史探索之旅。七天六夜，学员将踏入秦始皇兵马俑的恢宏军阵、登上中国保存最完整的明代城墙、亲历华清宫千年温泉与唐代盛世风华，感受十三朝古都的历史积淀，并体验古丝绸之路文化、唐代乐舞、中国陕菜烹饪等非遗技艺，开启一段跨越千年的文明对话。
+          <span class="en">This program is specially designed for Cambodian primary, secondary, and university students — a deep historical exploration of Xi'an, the ancient capital and cradle of Chinese civilization. Over 7 days and 6 nights, participants will stand before the Terracotta Warriors, walk the ancient Ming Dynasty city walls, experience Huaqing Palace's hot springs, and immerse in the grandeur of the Tang Dynasty's Silk Road culture, ancient dance, and Shaanxi culinary arts.</span>
+        </p>
+        <blockquote class="overview-quote">
+          "秦王扫六合，虎视何雄哉。" — 李白<br>西安，一座城市就是一部中国史。
+          <span class="en">"The King of Qin swept all six states — how magnificent his gaze!" — Li Bai. Xi'an: one city is the entire history of China.</span>
+        </blockquote>
+      </div>
+      <div class="info-cards">
+        <div class="info-card">
+          <span class="info-label">项目名称 Program Name</span>
+          <span class="info-value">长安盛世探索营</span>
+          <span class="info-sub">Xi'an Imperial Capital · Silk Road Deep Cultural Discovery Camp（柬埔寨学生西安深度研学）</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">适用对象 Target Students</span>
+          <span class="info-value">柬埔寨大 / 中 / 小学生</span>
+          <span class="info-sub">Cambodian University / Secondary / Primary School Students · Ages 10–25</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">行程规模 Duration</span>
+          <span class="info-value">7日6晚 · 7 Days 6 Nights</span>
+          <span class="info-sub">含国际往返机票及中国签证，全程落地接待 / Incl. round-trip flights & China visa, full ground service</span>
+        </div>
+        <div class="info-card highlight">
+          <span class="info-label">五大体验主线 Five Core Tracks</span>
+          <span class="info-value">历史遗址 · 丝路文化 · 非遗技艺 · 自然生态 · 文化交流</span>
+          <span class="info-sub">Heritage · Silk Road · Intangible Arts · Nature · Cultural Exchange</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ITINERARY TIMELINE ═══════════════════════ -->
+<section class="timeline-section" id="itinerary">
+  <div class="section-inner">
+    <div class="section-header" style="padding-bottom:32px;">
+      <span class="section-tag" style="border-color:rgba(201,168,76,0.5);color:var(--gold);">Itinerary Overview</span>
+      <h2 class="section-title-cn" style="color:#fff;">行程概览</h2>
+      <p class="section-title-en">Seven Days, Seven Chapters — A Journey Through Xi'an's Three-Thousand-Year Soul</p>
+      <p class="section-desc" style="color:rgba(255,255,255,0.45);">抵达→秦俑→城垣→丝路→盛唐→自然→凯旋，层层递进，每天一段传奇。</p>
+    </div>
+    <div class="timeline-scroll">
+      <div class="timeline-track">
+        <div class="tl-item">
+          <div class="tl-badge">DAY 1</div>
+          <div class="tl-cn">抵达长安</div>
+          <div class="tl-en">Arrival in Xi'an</div>
+          <div class="tl-loc">咸阳国际机场 · 大雁塔广场</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 2</div>
+          <div class="tl-cn">千古兵阵</div>
+          <div class="tl-en">Terracotta Warriors</div>
+          <div class="tl-loc">兵马俑 · 秦始皇陵</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 3</div>
+          <div class="tl-cn">城垣雄风</div>
+          <div class="tl-en">Ancient City Wall</div>
+          <div class="tl-loc">明城墙 · 钟鼓楼 · 回民街</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 4</div>
+          <div class="tl-cn">丝路非遗</div>
+          <div class="tl-en">Silk Road Arts</div>
+          <div class="tl-loc">剪纸·泥塑·秦腔·皮影戏</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 5</div>
+          <div class="tl-cn">盛唐华清</div>
+          <div class="tl-en">Tang Dynasty Glory</div>
+          <div class="tl-loc">华清宫 · 大唐芙蓉园</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 6</div>
+          <div class="tl-cn">自然人文</div>
+          <div class="tl-en">Nature & Heritage</div>
+          <div class="tl-loc">秦岭 · 陕历博 · 告别晚宴</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 7</div>
+          <div class="tl-cn">凯旋启程</div>
+          <div class="tl-en">Farewell Xi'an</div>
+          <div class="tl-loc">结营典礼 · 返程</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ITINERARY DETAIL ═══════════════════════ -->
+<section class="itinerary-detail">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Daily Schedule</span>
+      <h2 class="section-title-cn">详细行程安排</h2>
+      <p class="section-title-en">Day-by-Day Program Details</p>
+    </div>
+    <div class="days-wrap">
+
+      <!-- DAY 1 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">1</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 1 ·</span>
+              <span class="day-name-cn">抵达长安，踏入千年古都</span>
+              <span class="day-name-en">Arrival in Xi'an — Welcome to the Ancient Capital</span>
+            </div>
+            <p class="day-theme">初印象 · 盛唐气象 · First Impressions of the Thirteen-Dynasty Capital</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">全天</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">国际航班抵达西安咸阳国际机场</span>
+                <span class="act-tag tag-logistics">后勤 Logistics</span>
+              </div>
+              <span class="act-title-en">International Flight Arrival at Xi'an Xianyang International Airport (XIY)</span>
+              <p class="act-desc">接机导师持牌迎接，专属大巴接送入住四星级酒店。发放中柬双语研学手册，辅导员进行西安城市文化简介——从周秦汉唐到今日古城。<span class="en">Welcoming reception by bilingual guides, transfer to 4-star hotel. Distribution of Khmer-Chinese bilingual study guides and Xi'an cultural briefing — from Zhou, Qin, Han & Tang dynasties to the modern ancient city.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">15:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">大雁塔广场 · 大唐不夜城漫游</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Big Wild Goose Pagoda & Tang Paradise Night City</span>
+              <p class="act-desc">参观玄奘西行求法的大雁塔，了解佛教东传历史与唐代国际交流。傍晚漫步大唐不夜城，欣赏唐风建筑街区，感受盛唐文化复兴氛围。<span class="en">Visit the Big Wild Goose Pagoda built for Xuanzang's scriptures, learn about Buddhism's spread from India to China. Evening stroll through Tang Paradise Night City — a stunning recreation of Tang Dynasty street culture.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">18:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">欢迎晚宴 · 开营仪式</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Welcome Dinner & Opening Ceremony</span>
+              <p class="act-desc">举行正式开营仪式，每位学员发放研学套装（毛笔+剪纸工具+纪念册）。品尝正宗陕西特色菜肴，导师介绍七天行程与学习目标，分组建队。<span class="en">Formal opening ceremony with study kit distribution (brush, paper-cutting tools & journal). Taste authentic Shaanxi cuisine. Schedule briefing, team introductions, and goal-setting session.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">2</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 2 ·</span>
+              <span class="day-name-cn">千古兵阵，世界第八奇迹</span>
+              <span class="day-name-en">Terracotta Warriors — The Eighth Wonder of the World</span>
+            </div>
+            <p class="day-theme">秦代遗产 · 帝国意志 · Qin Dynasty Legacy & Imperial Power</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">秦始皇兵马俑博物馆深度参观</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Emperor Qin's Terracotta Army Museum — Deep Exploration</span>
+              <p class="act-desc">专业中英双语导游带领深度参观一、二、三号坑，近距离欣赏逾8,000件真人大小的陶俑与战马。了解秦朝统一六国历史、古代军事制度与陶艺工艺。约3小时深度游览。<span class="en">Expert bilingual tour through Pit 1, 2 & 3, viewing over 8,000 life-sized terracotta soldiers and horses. Learn about Qin Dynasty unification, ancient military systems, and pottery craftsmanship. ~3-hour deep exploration.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">12:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">秦始皇陵封土堆参观</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Qin Shi Huang's Mausoleum — The Unexcavated Wonder</span>
+              <p class="act-desc">探访至今尚未发掘的秦始皇陵主陵封土堆，了解《史记》中记载的地下宫殿传说。完成研学任务卡"我眼中的始皇帝"，引导学生思考历史遗产保护与考古伦理。<span class="en">Visit the unexcavated main mausoleum mound, explore legends of the underground palace as recorded in the Shiji. Complete the "Emperor Qin in My Eyes" study card — reflecting on heritage preservation and archaeological ethics.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">15:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">兵马俑彩绘陶俑DIY体验</span>
+                <span class="act-tag tag-art">艺术 Arts</span>
+              </div>
+              <span class="act-title-en">Terracotta Warrior Painting Workshop</span>
+              <p class="act-desc">在非遗传承人指导下，亲手绘制仿真陶俑模型，了解古代彩绘工艺与矿物颜料使用方法。每位学员完成个人专属彩绘陶俑作品并带走。<span class="en">Under guidance of intangible heritage masters, paint your own terracotta warrior replica. Learn ancient pigment and coloring techniques. Each student takes home their own completed warrior.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 3 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">3</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 3 ·</span>
+              <span class="day-name-cn">城垣雄风，漫步千年古墙</span>
+              <span class="day-name-en">The Ancient City Wall — Riding Along History</span>
+            </div>
+            <p class="day-theme">明代遗存 · 古城格局 · Ming Dynasty Wall & Historic Urban Grid</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">西安城墙骑行 · 俯瞰古城全景</span>
+                <span class="act-tag tag-sports">体能挑战 Challenge</span>
+              </div>
+              <span class="act-title-en">City Wall Cycling — A Panoramic Ride Through History</span>
+              <p class="act-desc">骑自行车沿中国保存最完整的明代城墙游览，全长13.74公里，感受古城壮阔格局。导师沿途讲解城墙建造历史、防御体系与各城门文化。<span class="en">Cycle along China's best-preserved Ming Dynasty city wall (13.74km circuit). Learn about construction history, defensive systems, and the cultural significance of each city gate from bilingual guides.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">11:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">钟楼·鼓楼 · 晨钟暮鼓文化体验</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Bell Tower & Drum Tower — Morning Bell, Evening Drum</span>
+              <p class="act-desc">参观西安标志性钟楼与鼓楼，了解中国古代城市计时制度与礼乐文化。亲身体验敲鼓仪式，感受"晨钟暮鼓"的历史回响。<span class="en">Visit Xi'an's iconic Bell Tower and Drum Tower. Learn about ancient Chinese urban timekeeping and ritual music culture. Participate in the drum-striking ceremony and feel the resonance of history.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">回民街 · 丝路美食文化之旅</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Muslim Quarter (Huimin Street) — Silk Road Food Culture</span>
+              <p class="act-desc">漫步西安最具异域风情的回民街，品尝羊肉泡馍、肉夹馍、凉皮等经典陕西小吃，感受千年丝绸之路带来的多元文化融合。了解西安回族历史与中阿文化交流。<span class="en">Stroll through Xi'an's vibrant Muslim Quarter, taste Yangrou Paomo, Roujiamo, and Liangpi. Experience the multicultural legacy of the Silk Road. Learn about Xi'an's Hui Muslim history and Arab-Chinese cultural exchange.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 4 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">4</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 4 ·</span>
+              <span class="day-name-cn">丝路非遗，千年技艺传承</span>
+              <span class="day-name-en">Silk Road Intangible Heritage — Crafts Across Centuries</span>
+            </div>
+            <p class="day-theme">非物质遗产 · 文化创作 · Intangible Heritage & Artistic Immersion</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">陕西剪纸体验 · "我的生肖剪纸"</span>
+                <span class="act-tag tag-art">艺术 Arts</span>
+              </div>
+              <span class="act-title-en">Shaanxi Paper-Cutting Workshop — "My Zodiac Cut"</span>
+              <p class="act-desc">国家级非遗剪纸传承人授课，学习剪纸基础刀法，完成以中国十二生肖为主题的个人剪纸作品。了解剪纸艺术的历史渊源与民俗意义，作品装框带走。<span class="en">National intangible heritage paper-cutting master teaches basic cutting techniques. Create a personalized Chinese zodiac paper-cut. Learn the folk history and symbolism behind this art form. Framed work to take home.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">11:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">凤翔泥塑体验 · 手捏彩绘泥玩具</span>
+                <span class="act-tag tag-art">艺术 Arts</span>
+              </div>
+              <span class="act-title-en">Fengxiang Clay Sculpture — Hand-Molded Color Folk Toys</span>
+              <p class="act-desc">体验陕西凤翔彩绘泥塑非遗工艺，亲手捏制并彩绘传统民俗造型（虎·鱼·福娃），感受"泥土变艺术"的创造乐趣，成品带走留念。<span class="en">Experience Fengxiang colored clay sculpting, a national intangible heritage craft. Hand-mold and paint traditional folk figures (tiger, fish, fortune doll). Take your completed sculpture home.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">秦腔皮影戏欣赏 · 中国最古老的戏剧</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Qin Opera & Shadow Puppetry — China's Oldest Drama</span>
+              <p class="act-desc">欣赏国家级非遗秦腔折子戏，感受"百戏之祖"的磅礴气势。参与皮影戏互动体验，亲手操控皮影人物，了解中国皮影戏的历史起源与丝路传播之路。<span class="en">Watch a Qin Opera excerpt — China's oldest theatrical form and ancestor of all Chinese operas. Hands-on shadow puppetry experience: control characters yourself and learn about the Silk Road spread of this ancient art.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">19:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">陕西厨艺课 · 手工擀面与肉夹馍制作</span>
+                <span class="act-tag tag-culture">美食 Cuisine</span>
+              </div>
+              <span class="act-title-en">Shaanxi Cooking Class — Hand-Rolled Noodles & Roujiamo</span>
+              <p class="act-desc">在当地厨师指导下，亲手学习制作陕西特色手工面条与肉夹馍（"中国汉堡"），了解陕菜饮食文化与小麦文明。亲手做、亲口吃，最有温度的文化课。<span class="en">Under local chefs' guidance, hand-roll Shaanxi noodles and assemble Roujiamo ("Chinese hamburger"). Learn about Shaanxi food culture and wheat civilization. Cook it, eat it — the most heartfelt cultural lesson.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 5 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">5</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 5 ·</span>
+              <span class="day-name-cn">盛唐华清，温泉与帝国的传奇</span>
+              <span class="day-name-en">Tang Dynasty Glory — Huaqing Palace & Imperial Romance</span>
+            </div>
+            <p class="day-theme">唐代盛世 · 皇家温泉 · Tang Imperial Splendour & Royal Heritage</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">华清宫 · 皇家温泉与唐玄宗传奇</span>
+                <span class="act-tag tag-history">历史文化 Heritage</span>
+              </div>
+              <span class="act-title-en">Huaqing Palace — Royal Hot Springs & Tang Emperor's Legend</span>
+              <p class="act-desc">游览千年皇家温泉胜地华清宫，参观莲花汤、海棠汤等唐代御用汤池遗址。了解唐玄宗与杨贵妃的历史传奇，感受白居易《长恨歌》所描绘的盛唐风华。探访西安事变旧址——五间厅。<span class="en">Tour the millennium-old royal hot spring resort. Visit Tang Dynasty imperial bathing pools. Learn about Emperor Xuanzong and Yang Guifei's legendary romance, immortalized in Bai Juyi's "Song of Everlasting Regret." Also visit the Xi'an Incident site.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">13:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">大唐芙蓉园 · 唐代皇家园林体验</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Tang Paradise Garden — Imperial Garden Immersion</span>
+              <p class="act-desc">游览以唐代皇家御苑为原型复建的大唐芙蓉园，欣赏仿唐建筑群落，体验唐代诗词、歌舞与宫廷礼仪。观看大型实景演出《梦回大唐》，沉浸式感受盛唐文化。<span class="en">Explore the Tang Paradise Garden reconstructed after the Tang imperial garden. Admire Tang Dynasty architecture, participate in Tang poetry and court ritual experiences. Watch the spectacular live show "Dream of the Tang Dynasty."</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">16:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">中柬学生交流活动 · 丝路文化分享会</span>
+                <span class="act-tag tag-intl">国际交流 Exchange</span>
+              </div>
+              <span class="act-title-en">Cambodia-China Student Silk Road Cultural Exchange</span>
+              <p class="act-desc">与西安当地学生共同参与丝路主题文化交流活动，柬埔寨学生分享吴哥窟与高棉文明，中国学生介绍西安与丝绸之路，互赠文化礼品，探讨东西文明交汇的历史意义。<span class="en">Joint Silk Road cultural exchange with Xi'an students. Cambodian students share Angkor Wat and Khmer civilization; Chinese students introduce Xi'an and the Silk Road. Exchange gifts and discuss the historical significance of East-West civilization encounters.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 6 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">6</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 6 ·</span>
+              <span class="day-name-cn">自然人文，秦岭与历史博物馆</span>
+              <span class="day-name-en">Nature & Heritage — Qinling Mountains & Museum of China</span>
+            </div>
+            <p class="day-theme">自然生态 · 文明脉络 · Natural Wonders & Civilization's Timeline</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">秦岭野生动物世界 · 大熊猫与金丝猴</span>
+                <span class="act-tag tag-tech">生态 Ecology</span>
+              </div>
+              <span class="act-title-en">Qinling Wildlife Park — Giant Panda & Golden Snub-Nosed Monkey</span>
+              <p class="act-desc">参访中国南北地理分界线——秦岭的野生动物保护基地，近距离观察大熊猫、国家一级保护动物金丝猴等珍稀物种。了解秦岭生物多样性与中国生态保护政策。<span class="en">Visit a wildlife conservation center at the Qinling Mountains — China's north-south geographical divide. Observe giant pandas, golden snub-nosed monkeys, and other rare species. Learn about Qinling biodiversity and China's conservation policies.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">13:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">陕西历史博物馆 · 中国历史文化宝库</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Shaanxi History Museum — Treasure House of Chinese History</span>
+              <p class="act-desc">参观被誉为"中国第一博物馆"的陕西历史博物馆，馆藏逾170万件文物，涵盖从石器时代到明清的完整历史脉络。重点欣赏汉代金兽、唐代壁画、鎏金铜蚕等丝路珍宝。<span class="en">Visit Shaanxi History Museum — "China's First Museum" with over 1.7 million artifacts spanning the Stone Age to Qing Dynasty. Highlights: Han Dynasty Gold Beast, Tang murals, and gilded bronze silkworms — treasures of the Silk Road.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">18:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">羊肉泡馍盛宴 · 告别晚宴</span>
+                <span class="act-tag tag-culture">美食 Cuisine</span>
+              </div>
+              <span class="act-title-en">Yangrou Paomo Feast — Farewell Dinner</span>
+              <p class="act-desc">在百年老字号享用西安最具代表性的羊肉泡馍，亲手掰馍体验传统饮食仪式。学员分享七天研学感悟，颁发"研学成就卡"，拍摄团体纪念照，共度难忘一夜。<span class="en">At a century-old Xi'an restaurant, enjoy the iconic Yangrou Paomo. Hand-break the bread yourself — a treasured local ritual. Students share 7-day reflections, receive "Achievement Cards," and take group commemorative photos.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 7 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">7</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 7 ·</span>
+              <span class="day-name-cn">凯旋启程，带走长安</span>
+              <span class="day-name-en">Farewell Xi'an — Take the Ancient Capital Home</span>
+            </div>
+            <p class="day-theme">结营典礼 · 满载而归 · Closing Ceremony & Homebound Journey</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">碑林博物馆 · 中国书法艺术殿堂</span>
+                <span class="act-tag tag-history">历史文化 Heritage</span>
+              </div>
+              <span class="act-title-en">Forest of Stone Steles Museum — Temple of Chinese Calligraphy</span>
+              <p class="act-desc">参观拥有逾千年历史的碑林博物馆，馆内珍藏历代石刻碑文逾11,000件。欣赏王羲之、颜真卿、柳公权等书法大家真迹拓本，感受汉字书法艺术的千年传承与文化魅力。<span class="en">Visit the millennium-old Forest of Stone Steles — China's premier calligraphy museum with over 11,000 carved stone tablets. Admire rubbings of masterworks by Wang Xizhi, Yan Zhenqing, and Liu Gongquan. Feel the thousand-year legacy of Chinese calligraphy.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">11:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">结营典礼 · 结业证书颁发</span>
+                <span class="act-tag tag-intl">结营 Closing</span>
+              </div>
+              <span class="act-title-en">Closing Ceremony — Certificate Presentation</span>
+              <p class="act-desc">举行正式结营典礼，颁发"长安盛世探索营"双语结业证书、成绩手册及作品集。学员代表发表感言，播放七天影像回顾短片，留下最珍贵的记忆。<span class="en">Formal closing ceremony with presentation of bilingual completion certificates, achievement booklets, and portfolio collections. Student representative speeches and a 7-day video highlight reel — memories for a lifetime.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">永兴坊 · 自由购物 & 出发</span>
+                <span class="act-tag tag-logistics">后勤 Logistics</span>
+              </div>
+              <span class="act-title-en">Yongxing Fang — Free Shopping & Airport Transfer</span>
+              <p class="act-desc">前往永兴坊特色街区自由购物，选购陕西特产（秦腔面具、剪纸、柿饼等）及纪念品。专属大巴送往咸阳国际机场，乘坐国际航班返回金边。道别长安，满载而归。<span class="en">Free shopping at Yongxing Fang for Shaanxi specialties (Qin Opera masks, paper-cuts, persimmon cakes & more). Coach transfer to Xianyang airport for international flight back to Phnom Penh. Farewell Xi'an — homeward bound!</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ HIGHLIGHTS ═══════════════════════ -->
+<section id="highlights" style="background: var(--cream);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Course Highlights</span>
+      <h2 class="section-title-cn">课程亮点</h2>
+      <p class="section-title-en">What Makes This Program Unique</p>
+      <p class="section-desc">六大核心模块，涵盖秦汉唐历史、丝路非遗、城垣骑行、生态探索与国际交流，七天研学体验全面升级。</p>
+    </div>
+    <div class="highlights-grid">
+      <div class="hc-card">
+        <div class="hc-icon">⚔️</div>
+        <h3 class="hc-title">世界第八奇迹探访</h3>
+        <p class="hc-en">Eighth Wonder of the World</p>
+        <p class="hc-desc">深度游览秦始皇兵马俑三大坑，专业双语导游讲解，近距离欣赏逾8,000件陶俑与战马，感受秦帝国的雄浑气魄。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🎭</div>
+        <h3 class="hc-title">丝路非遗四大工坊</h3>
+        <p class="hc-en">Four Silk Road Heritage Workshops</p>
+        <p class="hc-desc">剪纸·泥塑·皮影·厨艺四大非遗工坊亲手体验，每项均完成个人作品并带走，让千年技艺在指尖复活。</p>
+      </div>
+      <div class="hc-card dark">
+        <div class="hc-icon">🏯</div>
+        <h3 class="hc-title">古城墙骑行挑战</h3>
+        <p class="hc-en">Ancient City Wall Cycling Challenge</p>
+        <p class="hc-desc">骑行中国保存最完整的明代城墙，13.74公里俯瞰千年古城全貌，颁发"长安好汉骑行证书"，铸就终身难忘的记忆。</p>
+        <span class="hc-badge">纪念证书 Certificate</span>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🌸</div>
+        <h3 class="hc-title">华清宫唐代盛世沉浸</h3>
+        <p class="hc-en">Tang Dynasty Immersive Experience</p>
+        <p class="hc-desc">游览华清宫皇家温泉遗址，观赏大唐芙蓉园实景演出《梦回大唐》，沉浸式感受中国历史上最开放、最繁荣的朝代。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🥢</div>
+        <h3 class="hc-title">陕菜烹饪体验课</h3>
+        <p class="hc-en">Shaanxi Culinary Arts Class</p>
+        <p class="hc-desc">亲手制作手工面条与肉夹馍，感受陕西饮食文化中蕴含的农耕文明与丝路交融，美食是最有温度的历史课。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🌍</div>
+        <h3 class="hc-title">柬中丝路文化交流</h3>
+        <p class="hc-en">Cambodia-China Silk Road Exchange</p>
+        <p class="hc-desc">与西安本地学生共探"丝绸之路"历史，吴哥窟与兵马俑的文明对话，柬埔寨与中国青年共建跨国友谊与文化纽带。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SAFETY ═══════════════════════ -->
+<section class="safety-section" id="safety">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Safety & Service</span>
+      <h2 class="section-title-cn">安全保障</h2>
+      <p class="section-title-en">Full Safety & Comprehensive Service</p>
+      <p class="section-desc">从金边出发到安全返程，全程专业化运营，让远在柬埔寨的家长安心放心。</p>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card">
+        <span class="safety-icon">🛡️</span>
+        <div class="safety-title">师生配比 1:8</div>
+        <p class="safety-desc">每8名学生配备1名专业辅导员，全程随行贴身照护，紧急情况即时响应。</p>
+        <span class="safety-en">1:8 Teacher-Student Ratio, 24/7 supervision</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">📱</span>
+        <div class="safety-title">家长实时联络</div>
+        <p class="safety-desc">每日发送活动照片与行程动态，建立家长群组，随时沟通，全程安心。</p>
+        <span class="safety-en">Daily photo updates & parent group chat</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🏥</span>
+        <div class="safety-title">医疗急救保障</div>
+        <p class="safety-desc">全程配备急救药箱，行程内含医疗紧急处理预案，保险覆盖全程意外与医疗风险。</p>
+        <span class="safety-en">First-aid kits, emergency protocol & full insurance</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">✈️</span>
+        <div class="safety-title">签证全程协助</div>
+        <p class="safety-desc">专业团队协助办理中国学生签证，出发前家长线上说明会，行前材料全包服务。</p>
+        <span class="safety-en">Full China visa assistance & pre-departure briefing</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🚌</span>
+        <div class="safety-title">专属接送服务</div>
+        <p class="safety-desc">专属大巴全程接送，从金边出发直至安全返程，不使用任何公共交通，安全可靠。</p>
+        <span class="safety-en">Dedicated coach throughout, no public transport</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">📸</span>
+        <div class="safety-title">专业影像记录</div>
+        <p class="safety-desc">全程配备专业摄影师跟拍，结营后提供精修相册与研学影像视频，珍藏永久记忆。</p>
+        <span class="safety-en">Professional photographer, post-trip photo album & video</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PRICING ═══════════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="section-inner">
+    <div class="section-header" style="padding-bottom:36px;">
+      <span class="section-tag" style="border-color:rgba(201,168,76,0.5);">Pricing Details</span>
+      <h2 class="section-title-cn" style="color:#fff;">费用说明</h2>
+      <p class="section-title-en">Transparent Pricing — All-Inclusive, No Hidden Fees</p>
+      <p class="section-desc" style="color:rgba(255,255,255,0.4);">一价全包，费用透明，无任何额外收费。<br>All-inclusive price, fully transparent, absolutely no hidden charges.</p>
+    </div>
+    <div class="pricing-wrap">
+      <div class="pricing-card">
+        <div class="price-head">
+          <p class="price-label">
+            每人费用（含国际往返机票及中国签证）
+            <span class="en">Per Person — Including Round-Trip International Flight & China Visa</span>
+          </p>
+          <div class="price-amount">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+              <div>
+                <span class="price-currency">¥</span>
+                <span class="price-number">17,999</span>
+                <span class="price-unit">/人 per person</span>
+              </div>
+              <div style="display:flex;align-items:baseline;gap:4px;">
+                <span style="font-size:14px;color:rgba(255,255,255,0.5);">USD</span>
+                <span class="price-usd" style="font-size:36px;font-weight:700;color:var(--gold-light);">$2,699</span>
+                <span style="font-size:13px;color:rgba(255,255,255,0.4);">/person</span>
+              </div>
+            </div>
+          </div>
+          <p class="price-sub">7日6晚 · 金边⇄西安 · 全程一价全包 · Phnom Penh ⇄ Xi'an · 7D6N All-Inclusive</p>
+        </div>
+        <div class="price-body">
+          <div class="includes-col">
+            <div class="col-title">
+              费用包含 ✅
+              <span class="en">What's Included</span>
+            </div>
+            <ul class="inc-list">
+              <li>✈️ 金边—西安 国际往返机票<span class="en">Phnom Penh ↔ Xi'an Round-Trip Flight</span></li>
+              <li>🪪 中国旅游签证全程办理<span class="en">China Tourist Visa Application Assistance</span></li>
+              <li>🏨 6晚四星级酒店（双人间）<span class="en">6 Nights 4-Star Hotel (Twin Room)</span></li>
+              <li>🍽️ 全程正餐（早/午/晚）<span class="en">All Meals — Breakfast, Lunch & Dinner</span></li>
+              <li>🎫 所有景点门票（兵马俑/华清宫/城墙等）<span class="en">All Entrance Tickets (Terracotta Warriors, Huaqing Palace, etc.)</span></li>
+              <li>✂️ 非遗工坊材料费（剪纸/泥塑/皮影/厨艺）<span class="en">Heritage Workshop Materials (Paper-cut, Clay, Puppetry, Cooking)</span></li>
+              <li>🏺 彩绘陶俑DIY作品（带走）<span class="en">Painted Terracotta Warrior Artwork to Take Home</span></li>
+              <li>🚲 城墙骑行自行车租赁费<span class="en">City Wall Bicycle Rental Fee</span></li>
+              <li>📚 中柬双语研学手册<span class="en">Khmer-Chinese Bilingual Study Guide</span></li>
+              <li>🏅 "长安好汉"骑行纪念证书<span class="en">"Xi'an Hero" Cycling Commemorative Certificate</span></li>
+              <li>📜 研学结业证书（双语）<span class="en">Bilingual Program Completion Certificate</span></li>
+              <li>🛡️ 全程意外与医疗保险<span class="en">Full Accident & Medical Insurance</span></li>
+              <li>🚌 全程专属大巴接送<span class="en">Dedicated Coach All Transfers</span></li>
+              <li>👨‍🏫 中柬双语辅导员全程陪同<span class="en">Bilingual Guides & Supervisors Throughout</span></li>
+              <li>📸 专业摄影 + 结营相册<span class="en">Professional Photography + Post-Trip Photo Album</span></li>
+            </ul>
+          </div>
+          <div class="excludes-col">
+            <div class="col-title">
+              费用不含 ❌
+              <span class="en">What's Not Included</span>
+            </div>
+            <ul class="exc-list">
+              <li>🧳 个人行李超重费用<span class="en">Personal baggage overweight fees</span></li>
+              <li>🛍️ 个人购物及纪念品费用<span class="en">Personal shopping & souvenirs</span></li>
+              <li>📞 国际漫游电话费<span class="en">International roaming charges</span></li>
+              <li>💊 个人常用药品<span class="en">Personal medication</span></li>
+              <li>🎭 自选额外活动费用<span class="en">Optional extra activity fees</span></li>
+            </ul>
+            <br>
+            <div class="col-title" style="margin-top:16px;">
+              增值服务 ⭐
+              <span class="en">Value-Added Services</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📞 签证顾问跨时区专项咨询
+                <span style="font-size:11px;color:var(--muted);display:block;">Visa consultant cross-timezone advisory</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📩 出发前家长线上说明会
+                <span style="font-size:11px;color:var(--muted);display:block;">Pre-departure online parent briefing session</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📦 结营成果邮寄（证书+相册+作品）
+                <span style="font-size:11px;color:var(--muted);display:block;">Post-program mailing: certificate + album + artwork</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                🎬 七天纪录片剪辑视频
+                <span style="font-size:11px;color:var(--muted);display:block;">7-day documentary short film per student</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-extras">
+          <div class="extra-item">
+            📅 每年分批出发，名额有限，先报先得
+            <span class="en">Limited spots per batch, first-come-first-served enrollment</span>
+          </div>
+          <div class="extra-item">
+            👨‍👩‍👧 团体优惠：10人以上报名享专项折扣
+            <span class="en">Group discount available for 10+ participants</span>
+          </div>
+          <div class="extra-item">
+            💳 支持分期付款方案
+            <span class="en">Installment payment plan available</span>
+          </div>
+          <div class="extra-item">
+            🔒 报名后签订正式合同，保障双方权益
+            <span class="en">Formal contract upon enrollment to protect both parties</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-logo-circle">秦</div>
+  <p class="footer-brand">长安盛世探索营</p>
+  <p class="footer-sub">XI'AN IMPERIAL CAPITAL DISCOVERY CAMP · CAMBODIA × CHINA</p>
+  <div class="footer-divider"></div>
+  <p class="footer-project">柬埔寨学生西安深度研学项目 · 7日6晚 · ¥17,999/人 · $2,699/person</p>
+  <p class="footer-project" style="margin-top:6px;font-size:12px;color:rgba(255,255,255,0.3);">Cambodia Students Xi'an Deep Cultural Study Tour · 7 Days 6 Nights · ¥17,999 per person · $2,699/person</p>
+  <div class="footer-divider"></div>
+  <p class="footer-note">本方案最终解释权归主办方所有 · All rights reserved by the organizer. Final program details subject to change.</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const headerNav = document.getElementById('headerNav');
+  menuToggle.addEventListener('click', () => {
+    headerNav.classList.toggle('active');
+  });
+  headerNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      headerNav.classList.remove('active');
+    });
+  });
+</script>
+</body>
+</html>
