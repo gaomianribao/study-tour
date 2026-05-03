@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帝都华章探索营 · 7日6晚北京研学方案 | Beijing Cultural Discovery Camp</title>
+
+  <!-- Open Graph / 微信分享卡片 -->
+  <meta property="og:title" content="帝都华章探索营 · 7日6晚北京研学方案">
+  <meta property="og:description" content="探秘故宫长城，穿越千年帝都！7天6晚深度研学，沉浸式体验中华文化，名额有限，快来加入我们！">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://gaomianribao.github.io/study-tour/beijing-study-tour-7d6n.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="研学探索营">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="帝都华章探索营 · 7日6晚北京研学方案">
+  <meta name="twitter:description" content="探秘故宫长城，穿越千年帝都！7天6晚深度研学，沉浸式体验中华文化">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&h=630&fit=crop">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --dark: #1A1A2E;
+      --dark2: #2C3E50;
+      --red: #C0392B;
+      --cream: #FDF6E3;
+      --cream2: #F5F0E8;
+      --white: #fff;
+      --border: #E8DCC8;
+      --text: #2C3E50;
+      --muted: #7F8C8D;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ─── HEADER ─── */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(26, 26, 46, 0.96);
+      backdrop-filter: blur(8px);
+      padding: 14px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(201,168,76,0.35);
+    }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
+    .logo-circle {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900; color: #fff;
+      font-family: "Playfair Display", serif;
+    }
+    .logo-text {
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 16px; letter-spacing: 2px;
+    }
+    .logo-text small { display: block; font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 1px; font-family: "Noto Sans SC", sans-serif; }
+    .header-nav { display: flex; gap: 28px; }
+    .header-nav a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 13px; letter-spacing: 1px;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { color: var(--gold); }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .menu-toggle span {
+      display: block; width: 24px; height: 2px;
+      background: var(--gold); margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: 
+        linear-gradient(to bottom, rgba(26,26,46,0.75) 0%, rgba(26,26,46,0.45) 50%, rgba(26,26,46,0.88) 100%),
+        url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 80px 40px 160px;
+      max-width: 900px;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      color: var(--gold); font-size: 12px; letter-spacing: 4px;
+      text-transform: uppercase;
+      border: 1px solid rgba(201,168,76,0.5);
+      padding: 6px 20px; border-radius: 30px;
+      margin-bottom: 28px;
+      font-family: "Playfair Display", serif;
+    }
+    .hero-title-cn {
+      font-family: "Noto Serif SC", serif;
+      font-size: 52px; font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 6px;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.6);
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .hero-company {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .hero-title-en {
+      font-family: "Playfair Display", serif;
+      font-size: 22px; font-style: italic;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 28px;
+    }
+    .hero-subtitle {
+      font-size: 16px; color: rgba(255,255,255,0.7);
+      max-width: 600px; margin: 0 auto 16px;
+      line-height: 1.9;
+    }
+    .hero-subtitle .en { color: rgba(255,255,255,0.5); font-size: 13px; display: block; margin-top: 6px; }
+    .hero-tags {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+      margin: 24px 0 36px;
+    }
+    .hero-tag {
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold); font-size: 13px;
+      padding: 6px 18px; border-radius: 30px;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      color: #fff; font-size: 16px; font-weight: 600;
+      padding: 16px 48px; border-radius: 50px;
+      text-decoration: none; letter-spacing: 2px;
+      box-shadow: 0 8px 32px rgba(201,168,76,0.5);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.6); }
+    .hero-stats {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      display: flex;
+      background: rgba(26,26,46,0.85);
+      border-top: 1px solid rgba(201,168,76,0.4);
+      backdrop-filter: blur(6px);
+    }
+    .stat-item {
+      flex: 1; padding: 22px 16px; text-align: center;
+      border-right: 1px solid rgba(201,168,76,0.25);
+      color: #fff;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { display: block; font-size: 20px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.55); letter-spacing: 1px; }
+
+    /* ─── SECTION BASE ─── */
+    section { padding: 0; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-header { text-align: center; padding: 70px 40px 48px; }
+    .section-tag {
+      display: inline-block; font-size: 11px; letter-spacing: 3px;
+      color: var(--gold); text-transform: uppercase;
+      border: 1px solid var(--gold); padding: 4px 16px; border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .section-title-cn {
+      font-size: 36px; font-family: "Noto Serif SC", serif;
+      color: var(--dark); letter-spacing: 4px; margin-bottom: 8px;
+    }
+    .section-title-en {
+      font-size: 15px; color: var(--gold); letter-spacing: 2px;
+      font-family: "Playfair Display", serif; font-style: italic;
+    }
+    .section-desc {
+      font-size: 14px; color: var(--muted); margin-top: 14px;
+      max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.8;
+    }
+    .section-light { background: var(--dark); }
+    .section-light .section-title-cn { color: #fff; }
+    .section-light .section-title-en { color: var(--gold); }
+    .section-light .section-desc { color: rgba(255,255,255,0.5); }
+
+    /* ─── OVERVIEW ─── */
+    .overview-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; padding: 0 40px 60px;
+    }
+    .overview-text { }
+    .overview-intro {
+      font-size: 15px; line-height: 2; color: var(--text);
+      margin-bottom: 24px;
+    }
+    .overview-intro .en { color: var(--muted); font-size: 13px; display: block; margin-top: 8px; }
+    .overview-quote {
+      border-left: 4px solid var(--gold);
+      padding: 16px 20px;
+      background: var(--cream2);
+      border-radius: 0 8px 8px 0;
+      font-family: "Noto Serif SC", serif;
+      font-size: 15px; color: var(--dark);
+      font-style: italic;
+    }
+    .overview-quote .en { font-size: 12px; color: var(--muted); margin-top: 6px; display: block; font-style: normal; }
+    .info-cards { display: flex; flex-direction: column; gap: 16px; }
+    .info-card {
+      background: var(--white); border-radius: 12px;
+      padding: 20px 24px; border: 1px solid var(--border);
+      transition: box-shadow .2s;
+    }
+    .info-card:hover { box-shadow: 0 4px 20px rgba(201,168,76,0.15); }
+    .info-card.highlight { background: linear-gradient(135deg, var(--dark), var(--dark2)); }
+    .info-card.highlight .info-label { color: rgba(255,255,255,0.5); }
+    .info-card.highlight .info-value { color: var(--gold); }
+    .info-card.highlight .info-sub { color: rgba(255,255,255,0.4); }
+    .info-label { font-size: 11px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 4px; }
+    .info-value { font-size: 16px; font-weight: 600; color: var(--dark); display: block; margin-bottom: 4px; font-family: "Noto Serif SC", serif; }
+    .info-sub { font-size: 12px; color: var(--muted); }
+    .feature-tags {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+      padding: 0 40px 60px;
+    }
+    .ftag {
+      background: var(--white); border: 1px solid var(--border);
+      padding: 8px 20px; border-radius: 30px;
+      font-size: 14px; color: var(--dark);
+      transition: border-color .2s, color .2s;
+    }
+    .ftag:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* ─── TIMELINE ─── */
+    .timeline-section { background: var(--dark); }
+    .timeline-scroll { overflow-x: auto; padding: 0 40px 60px; }
+    .timeline-track {
+      display: flex; min-width: max-content;
+      position: relative; padding-top: 20px;
+    }
+    .timeline-track::before {
+      content: ''; position: absolute;
+      top: 52px; left: 60px; right: 60px;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), rgba(201,168,76,0.3), var(--gold));
+    }
+    .tl-item {
+      width: 170px; text-align: center;
+      padding: 0 16px; position: relative;
+    }
+    .tl-badge {
+      width: 66px; height: 66px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      color: #fff; font-weight: 700; font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 16px rgba(201,168,76,0.5);
+      letter-spacing: 1px; position: relative; z-index: 1;
+    }
+    .tl-cn { font-family: "Noto Serif SC", serif; font-size: 15px; color: var(--gold); margin-bottom: 6px; }
+    .tl-en { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.4; }
+    .tl-loc { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 6px; }
+
+    /* ─── ITINERARY DETAIL ─── */
+    .itinerary-detail { background: var(--cream2); }
+    .days-wrap { padding: 0 40px 60px; max-width: 1000px; margin: 0 auto; }
+    .day-card {
+      background: var(--white); border-radius: 16px;
+      margin-bottom: 28px; overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border: 1px solid var(--border);
+    }
+    .day-header {
+      display: flex; align-items: center; gap: 20px;
+      padding: 24px 32px;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+      border-bottom: 3px solid var(--gold);
+    }
+    .day-num {
+      font-size: 72px; font-weight: 900;
+      color: rgba(201,168,76,0.22); line-height: 1;
+      font-family: "Playfair Display", serif;
+      min-width: 80px;
+    }
+    .day-info { }
+    .day-title {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+    }
+    .day-label { font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 2px; }
+    .day-name-cn { font-size: 24px; color: var(--gold); font-family: "Noto Serif SC", serif; }
+    .day-name-en { font-size: 13px; color: rgba(255,255,255,0.5); display: block; margin-top: 4px; }
+    .day-theme { color: rgba(255,255,255,0.35); font-size: 12px; margin-top: 8px; letter-spacing: 2px; }
+    .day-activities { padding: 24px 32px; }
+    .act-item {
+      display: grid; grid-template-columns: 64px 18px 1fr;
+      gap: 0 14px; margin-bottom: 22px; align-items: start;
+    }
+    .act-item:last-child { margin-bottom: 0; }
+    .act-time {
+      font-size: 12px; color: var(--gold); font-weight: 600;
+      text-align: right; padding-top: 3px;
+    }
+    .act-dot-wrap { display: flex; flex-direction: column; align-items: center; }
+    .act-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: 4px;
+    }
+    .act-line { width: 2px; background: var(--border); flex: 1; min-height: 30px; }
+    .act-item:last-child .act-line { display: none; }
+    .act-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .act-title { font-size: 15px; font-weight: 600; color: var(--dark); }
+    .act-title-en { font-size: 12px; color: var(--muted); display: block; }
+    .act-desc { font-size: 13px; color: var(--text); line-height: 1.8; }
+    .act-desc .en { color: var(--muted); font-size: 12px; display: block; margin-top: 4px; }
+    .act-tag {
+      font-size: 11px; padding: 2px 9px; border-radius: 20px;
+      font-weight: 500; white-space: nowrap;
+    }
+    .tag-logistics   { background: #ECF0F1; color: #7F8C8D; }
+    .tag-culture     { background: #FDF2E9; color: #8B4513; }
+    .tag-history     { background: #EBF5FB; color: #2E4057; }
+    .tag-tech        { background: #EBF5FB; color: #1B6CA8; }
+    .tag-intl        { background: #EAFAF1; color: #1E8449; }
+    .tag-art         { background: #F5EEF8; color: #6C3483; }
+    .tag-sports      { background: #FEF9E7; color: #B7950B; }
+
+    /* ─── HIGHLIGHTS ─── */
+    .highlights-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; padding: 0 40px 60px;
+    }
+    .hc-card {
+      background: var(--white); border-radius: 16px;
+      padding: 32px 24px; border: 1px solid var(--border);
+      transition: transform .3s, box-shadow .3s;
+      position: relative; overflow: hidden;
+    }
+    .hc-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(to right, var(--gold), var(--gold-light));
+    }
+    .hc-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(201,168,76,0.2); }
+    .hc-card.dark { background: linear-gradient(135deg, var(--dark), var(--dark2)); border-color: var(--gold); }
+    .hc-card.dark .hc-title { color: var(--gold); }
+    .hc-card.dark .hc-desc { color: rgba(255,255,255,0.65); }
+    .hc-card.dark .hc-en { color: rgba(255,255,255,0.35); }
+    .hc-icon { font-size: 42px; margin-bottom: 18px; }
+    .hc-title { font-size: 19px; color: var(--dark); font-family: "Noto Serif SC", serif; margin-bottom: 8px; }
+    .hc-en { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-style: italic; }
+    .hc-desc { font-size: 13px; color: var(--text); line-height: 1.8; }
+    .hc-badge {
+      display: inline-block; background: var(--gold); color: #fff;
+      font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-top: 12px;
+    }
+
+    /* ─── SAFETY ─── */
+    .safety-section { background: var(--cream); }
+    .safety-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 20px; padding: 0 40px 60px;
+    }
+    .safety-card {
+      text-align: center; padding: 32px 20px;
+      background: var(--white); border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: box-shadow .2s;
+    }
+    .safety-card:hover { box-shadow: 0 6px 24px rgba(201,168,76,0.15); }
+    .safety-icon { font-size: 36px; display: block; margin-bottom: 14px; }
+    .safety-title { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 8px; font-family: "Noto Serif SC", serif; }
+    .safety-desc { font-size: 13px; color: var(--text); line-height: 1.7; }
+    .safety-en { font-size: 11px; color: var(--muted); display: block; margin-top: 6px; font-style: italic; }
+
+    /* ─── PRICING ─── */
+    .pricing-section { background: var(--dark); }
+    .pricing-wrap { padding: 0 40px 70px; max-width: 900px; margin: 0 auto; }
+    .pricing-card {
+      background: var(--white); border-radius: 24px;
+      overflow: hidden; box-shadow: 0 8px 48px rgba(0,0,0,0.25);
+      border: 2px solid var(--gold);
+    }
+    .price-head {
+      background: linear-gradient(135deg, #0f0f22, var(--dark2));
+      padding: 52px 48px; text-align: center;
+    }
+    .price-label { color: rgba(255,255,255,0.55); font-size: 14px; margin-bottom: 16px; letter-spacing: 1px; }
+    .price-label .en { display: block; font-size: 12px; margin-top: 4px; }
+    .price-amount { display: flex; align-items: flex-end; justify-content: center; gap: 4px; }
+    .price-currency { font-size: 28px; color: var(--gold); font-weight: 700; padding-bottom: 8px; }
+    .price-number {
+      font-size: 72px; font-weight: 900; color: var(--gold);
+      font-family: "Playfair Display", serif; line-height: 1;
+    }
+    .price-unit { font-size: 20px; color: rgba(255,255,255,0.5); padding-bottom: 8px; }
+    .price-sub { color: rgba(255,255,255,0.4); font-size: 13px; margin-top: 14px; }
+    .price-body { display: grid; grid-template-columns: 1fr 1fr; }
+    .includes-col { padding: 36px 32px; border-right: 1px solid var(--border); }
+    .excludes-col { padding: 36px 32px; background: #FFFDF7; }
+    .col-title {
+      font-size: 13px; font-weight: 700; letter-spacing: 2px;
+      color: var(--dark); margin-bottom: 20px;
+      padding-bottom: 10px; border-bottom: 2px solid var(--gold);
+    }
+    .col-title .en { font-size: 11px; color: var(--muted); font-weight: 400; display: block; margin-top: 2px; }
+    .inc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .inc-list li {
+      font-size: 13px; color: var(--text);
+      padding: 8px 12px; border-radius: 8px;
+      background: var(--cream); display: flex; align-items: flex-start; gap: 8px;
+      line-height: 1.5;
+    }
+    .inc-list li .en { font-size: 11px; color: var(--muted); display: block; }
+    .exc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .exc-list li {
+      font-size: 13px; color: var(--text);
+      padding: 8px 12px; border-radius: 8px;
+      background: #FFF5F5;
+    }
+    .exc-list li .en { font-size: 11px; color: var(--muted); display: block; }
+    .price-extras {
+      padding: 24px 32px;
+      background: linear-gradient(135deg, var(--dark), var(--dark2));
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 12px;
+    }
+    .extra-item {
+      color: rgba(255,255,255,0.7); font-size: 13px;
+      padding: 10px 16px; border-radius: 8px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .extra-item .en { font-size: 11px; color: rgba(255,255,255,0.35); display: block; margin-top: 2px; }
+
+    /* ─── FOOTER ─── */
+    .site-footer {
+      background: #0A0A14;
+      text-align: center; padding: 60px 40px;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+    .footer-logo-circle {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 900; color: #fff;
+      font-family: "Playfair Display", serif;
+      margin: 0 auto 16px;
+    }
+    .footer-brand { color: var(--gold); font-size: 20px; font-family: "Noto Serif SC", serif; letter-spacing: 3px; margin-bottom: 6px; }
+    .footer-sub { color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 2px; margin-bottom: 20px; }
+    .footer-project { color: rgba(255,255,255,0.55); font-size: 14px; margin-bottom: 8px; }
+    .footer-note { color: rgba(255,255,255,0.25); font-size: 12px; }
+    .footer-divider { width: 80px; height: 1px; background: rgba(201,168,76,0.3); margin: 24px auto; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-title-cn { font-size: 38px; }
+      .highlights-grid { grid-template-columns: repeat(2,1fr); }
+      .safety-grid { grid-template-columns: repeat(2,1fr); }
+      .overview-wrap { grid-template-columns: 1fr; }
+      .menu-toggle { display: block; }
+      .header-nav {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(26,26,46,0.98);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-bottom: 1px solid rgba(201,168,76,0.35);
+      }
+      .header-nav.active { display: flex; }
+    }
+    @media (max-width: 768px) {
+      .hero-title-cn { font-size: 24px; letter-spacing: 2px; }
+      .hero-company { font-size: 12px; letter-spacing: 1px; margin-bottom: 8px; }
+      .hero-title-en { font-size: 14px; }
+      .hero-content { padding: 20px 16px 300px; }
+      .hero-subtitle { font-size: 13px; padding: 0 5px; }
+      .hero-subtitle br { display: none; }
+      .btn-cta { padding: 12px 28px; font-size: 13px; }
+      .hero-stats { flex-direction: column; }
+      .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(201,168,76,0.25);
+        padding: 10px 16px;
+      }
+      .stat-num { font-size: 13px; margin-bottom: 2px; }
+      .stat-label { font-size: 11px; }
+      .highlights-grid { grid-template-columns: 1fr; padding: 0 20px 40px; }
+      .safety-grid { grid-template-columns: 1fr; padding: 0 20px 40px; }
+      .days-wrap { padding: 0 16px 40px; }
+      .day-header { padding: 18px 20px; }
+      .day-activities { padding: 16px 20px; }
+      .day-num { font-size: 48px; }
+      .act-item { grid-template-columns: 52px 16px 1fr; gap: 0 10px; }
+      .price-body { grid-template-columns: 1fr; }
+      .price-extras { grid-template-columns: 1fr; }
+      .includes-col { border-right: none; border-bottom: 1px solid var(--border); }
+      .pricing-wrap { padding: 0 16px 50px; }
+      .overview-wrap { padding: 0 20px 40px; }
+      .section-header { padding: 50px 20px 36px; }
+      .price-amount { flex-direction: column; gap: 10px; }
+      .price-currency { font-size: 24px; }
+      .price-number { font-size: 42px; }
+      .price-unit { font-size: 14px; }
+      .price-usd { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-circle">京</div>
+    <div class="logo-text">
+      BEIJING STUDY TOUR
+      <small>帝都华章探索营</small>
+    </div>
+  </div>
+  <nav class="header-nav" id="headerNav">
+    <a href="#overview">项目概述 Overview</a>
+    <a href="#itinerary">行程安排 Itinerary</a>
+    <a href="#highlights">课程亮点 Highlights</a>
+    <a href="#pricing">费用说明 Pricing</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="菜单 Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">✦ CAMBODIA × BEIJING · STUDY TOUR 2025 ✦</div>
+    <h1 class="hero-title-cn">帝都华章探索营</h1>
+    <p class="hero-company">新华之窗（北京）教育科技有限公司</p>
+    <p class="hero-title-en">Beijing Imperial Heritage · Deep Cultural Discovery Camp</p>
+    <p class="hero-subtitle">
+      7日6晚 · 柬埔寨学生走进中国首都深度研学<br>
+      <span class="en">7 Days 6 Nights · Cambodian Students Immersive Study Tour to Beijing, China</span>
+    </p>
+    <a href="#pricing" class="btn-cta">立即报名咨询 · Enroll Now</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">7天6晚</span>
+      <span class="stat-label">7 Days 6 Nights</span>
+    </div>
+      <div class="stat-item">
+        <span class="stat-num">¥17,999</span>
+        <span class="stat-label">Per Person · 每人</span>
+      </div>
+    <div class="stat-item">
+      <span class="stat-num">北京 Beijing</span>
+      <span class="stat-label">研学目的地 Destination</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">大/中/小通用</span>
+      <span class="stat-label">All School Levels</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">柬埔寨出发</span>
+      <span class="stat-label">From Cambodia</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROJECT OVERVIEW ═══════════════════════ -->
+<section id="overview" style="background: var(--cream);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Project Overview</span>
+      <h2 class="section-title-cn">项目概述</h2>
+      <p class="section-title-en">Program Overview</p>
+    </div>
+    <div class="overview-wrap">
+      <div class="overview-text">
+        <p class="overview-intro">
+          本项目专为柬埔寨中小学及大学学生设计，是一次走进中华文明核心——北京的深度文化探索之旅。七天六夜，学员将穿行于故宫宏大宫廷、登临万里长城、漫步颐和园皇家御苑，深入了解中国五千年历史文明，并体验传统书法、水墨画、中国功夫等文化精髓，同时走进高科技园区与顶尖高校，感受中国现代创新力量。
+          <span class="en">This program is specially designed for Cambodian primary, secondary, and university students — a deep cultural discovery journey to Beijing, the heart of Chinese civilization. Over 7 days and 6 nights, participants will explore the Forbidden City, climb the Great Wall, stroll through the Summer Palace, and experience traditional calligraphy, ink painting, martial arts, and modern innovation hubs.</span>
+        </p>
+        <blockquote class="overview-quote">
+          "不到长城非好汉。" — 毛泽东<br>登上长城，触摸历史，让世界的孩子读懂中国。
+          <span class="en">"He who has not climbed the Great Wall is not a true man." — Mao Zedong. Let the children of the world climb the Wall and understand China.</span>
+        </blockquote>
+      </div>
+      <div class="info-cards">
+        <div class="info-card">
+          <span class="info-label">项目名称 Program Name</span>
+          <span class="info-value">帝都华章探索营</span>
+          <span class="info-sub">Beijing Imperial Heritage Deep Cultural Discovery Camp（柬埔寨学生北京深度研学）</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">适用对象 Target Students</span>
+          <span class="info-value">柬埔寨大 / 中 / 小学生</span>
+          <span class="info-sub">Cambodian University / Secondary / Primary School Students · Ages 10–25</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">行程规模 Duration</span>
+          <span class="info-value">7日6晚 · 7 Days 6 Nights</span>
+          <span class="info-sub">含国际往返机票及中国签证，全程落地接待 / Incl. round-trip flights & China visa, full ground service</span>
+        </div>
+        <div class="info-card highlight">
+          <span class="info-label">五大体验主线 Five Core Tracks</span>
+          <span class="info-value">历史人文 · 传统艺术 · 科技创新 · 自然生态 · 文化交流</span>
+          <span class="info-sub">History · Arts · Technology · Nature · Cultural Exchange</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ITINERARY TIMELINE ═══════════════════════ -->
+<section class="timeline-section" id="itinerary">
+  <div class="section-inner">
+    <div class="section-header" style="padding-bottom:32px;">
+      <span class="section-tag" style="border-color:rgba(201,168,76,0.5);color:var(--gold);">Itinerary Overview</span>
+      <h2 class="section-title-cn" style="color:#fff;">行程概览</h2>
+      <p class="section-title-en">Seven Days, Seven Chapters — A Journey Through Beijing's Soul</p>
+      <p class="section-desc" style="color:rgba(255,255,255,0.45);">抵达→皇城→天堑→传艺→科创→生态→凯旋，层层递进，每天一个故事。</p>
+    </div>
+    <div class="timeline-scroll">
+      <div class="timeline-track">
+        <div class="tl-item">
+          <div class="tl-badge">DAY 1</div>
+          <div class="tl-cn">抵达京城</div>
+          <div class="tl-en">Arrival in Beijing</div>
+          <div class="tl-loc">首都国际机场 · 天安门广场</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 2</div>
+          <div class="tl-cn">紫禁盛世</div>
+          <div class="tl-en">Forbidden City</div>
+          <div class="tl-loc">故宫 · 景山 · 南锣鼓巷</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 3</div>
+          <div class="tl-cn">登临天堑</div>
+          <div class="tl-en">The Great Wall</div>
+          <div class="tl-loc">慕田峪长城 · 野长城</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 4</div>
+          <div class="tl-cn">传统艺术</div>
+          <div class="tl-en">Traditional Arts</div>
+          <div class="tl-loc">书法 · 水墨画 · 中国功夫</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 5</div>
+          <div class="tl-cn">科技未来</div>
+          <div class="tl-en">Tech & Innovation</div>
+          <div class="tl-loc">航天博物馆 · 清华大学</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 6</div>
+          <div class="tl-cn">自然人文</div>
+          <div class="tl-en">Nature & Culture</div>
+          <div class="tl-loc">颐和园 · 大熊猫馆 · 烤鸭晚宴</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-badge">DAY 7</div>
+          <div class="tl-cn">凯旋启程</div>
+          <div class="tl-en">Farewell Beijing</div>
+          <div class="tl-loc">结营典礼 · 返程</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ITINERARY DETAIL ═══════════════════════ -->
+<section class="itinerary-detail">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Daily Schedule</span>
+      <h2 class="section-title-cn">详细行程安排</h2>
+      <p class="section-title-en">Day-by-Day Program Details</p>
+    </div>
+    <div class="days-wrap">
+
+      <!-- DAY 1 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">1</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 1 ·</span>
+              <span class="day-name-cn">抵达京城，开启华章</span>
+              <span class="day-name-en">Arrival in Beijing — The Journey Begins</span>
+            </div>
+            <p class="day-theme">初印象 · 皇城气度 · First Impressions of the Imperial Capital</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">全天</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">国际航班抵达北京首都国际机场</span>
+                <span class="act-tag tag-logistics">后勤 Logistics</span>
+              </div>
+              <span class="act-title-en">International Flight Arrival at Beijing Capital International Airport (PEK)</span>
+              <p class="act-desc">接机导师持牌迎接，专属大巴接送入住四星级酒店。发放中柬双语研学手册，辅导员进行北京城市文化简介。<span class="en">Welcoming reception by bilingual guides, transfer to 4-star hotel. Distribution of Khmer-Chinese bilingual study guides and Beijing cultural briefing.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">15:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">天安门广场 · 国旗广场参观</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Tiananmen Square — The Heart of China</span>
+              <p class="act-desc">参观天安门广场，了解广场历史文化意义，近距离感受新中国的标志性建筑。可观赏人民英雄纪念碑、人民大会堂外观。<span class="en">Visit Tiananmen Square, learn about its historical and cultural significance, view the Monument to the People's Heroes and the Great Hall of the People.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">18:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">欢迎晚宴 · 开营仪式</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Welcome Dinner & Opening Ceremony</span>
+              <p class="act-desc">举行正式开营仪式，每位学员发放研学套装（笔墨纸砚+纪念册）。导师介绍七天行程与学习目标，分组建队，互相认识。<span class="en">Formal opening ceremony, distribution of study kits (calligraphy set & journal). Team introductions, schedule briefing, and goal-setting session.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">2</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 2 ·</span>
+              <span class="day-name-cn">紫禁盛世，千年皇城</span>
+              <span class="day-name-en">Forbidden City — Ten Thousand Rooms, One Dynasty</span>
+            </div>
+            <p class="day-theme">历史印记 · 皇城文化 · Imperial Heritage & Palace Culture</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">故宫博物院深度参观</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Forbidden City (Palace Museum) — Deep Exploration</span>
+              <p class="act-desc">专业中英双语导游带领深度参观，游览午门、太和殿、乾清宫、御花园等核心区域。了解明清两代皇室生活与宫廷文化，时长约3小时。<span class="en">Bilingual expert guide tour through Meridian Gate, Hall of Supreme Harmony, Palace of Heavenly Purity, Imperial Garden. ~3-hour deep exploration of Ming & Qing dynasty imperial life.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">12:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">景山公园 · 俯瞰紫禁城全景</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Jingshan Park — Bird's Eye View of the Forbidden City</span>
+              <p class="act-desc">登上景山万春亭，俯瞰故宫全景，感受皇城规制之宏大。完成研学任务卡"我眼中的北京中轴线"。<span class="en">Climb to Wanchun Pavilion for a panoramic view of the Forbidden City. Complete the "Beijing Central Axis in My Eyes" study mission card.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">15:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">南锣鼓巷胡同文化体验</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Nanluoguxiang Hutong — Old Beijing Alley Culture</span>
+              <p class="act-desc">漫步老北京胡同，探访四合院，品尝冰糖葫芦、老北京小吃。了解北京平民生活文化，与当地居民互动交流。<span class="en">Stroll through historic hutongs, visit traditional courtyard houses, taste candied hawthorn skewers and Beijing snacks. Interact with local residents about daily life culture.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 3 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">3</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 3 ·</span>
+              <span class="day-name-cn">登临天堑，不到长城非好汉</span>
+              <span class="day-name-en">The Great Wall — A Hero's Summit</span>
+            </div>
+            <p class="day-theme">奇迹遗产 · 意志磨砺 · World Heritage & Personal Challenge</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">08:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">出发慕田峪长城</span>
+                <span class="act-tag tag-logistics">后勤 Logistics</span>
+              </div>
+              <span class="act-title-en">Departure to Mutianyu Great Wall</span>
+              <p class="act-desc">专属大巴出发，约1.5小时车程抵达慕田峪长城景区。沿途导师讲解长城建造历史与军事意义。<span class="en">Dedicated coach to Mutianyu Great Wall (~1.5 hours). En-route commentary on Great Wall construction history and military significance.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">10:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">长城徒步登顶 · 颁发"好汉证书"</span>
+                <span class="act-tag tag-sports">体能挑战 Challenge</span>
+              </div>
+              <span class="act-title-en">Great Wall Hike & "Hero Certificate" Ceremony</span>
+              <p class="act-desc">分组徒步攀登长城，感受烽火台与城垛的历史温度。登顶后举行简短颁证仪式，每位学员获得"长城好汉"纪念证书。<span class="en">Group hike along the wall, experience watchtowers and battlements. Certificate ceremony at the summit — every participant earns a "Great Wall Hero" commemorative certificate.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">明十三陵 · 帝王陵寝探访</span>
+                <span class="act-tag tag-history">历史人文 History</span>
+              </div>
+              <span class="act-title-en">Ming Tombs — Mausoleum of the Emperors</span>
+              <p class="act-desc">参观明代皇帝陵寝，了解中国古代陵寝建筑艺术与丧葬文化。探访神道石像生，感受皇权象征的宏大气势。<span class="en">Visit the Ming Dynasty imperial mausoleums, learn about ancient Chinese funerary architecture. Explore the Sacred Way with its stone animal and official sculptures.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 4 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">4</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 4 ·</span>
+              <span class="day-name-cn">传统艺术，千年技艺</span>
+              <span class="day-name-en">Traditional Arts — A Thousand Years of Mastery</span>
+            </div>
+            <p class="day-theme">非遗技艺 · 文化创作 · Intangible Heritage & Artistic Creation</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">书法体验课 · "写我的中文名"</span>
+                <span class="act-tag tag-art">艺术 Arts</span>
+              </div>
+              <span class="act-title-en">Chinese Calligraphy Workshop — "Write My Chinese Name"</span>
+              <p class="act-desc">专业书法教师授课，学习毛笔使用方法，练习"福""寿""和"等吉祥汉字。每位学员将自己的柬文名字转为中文，完成个人专属书法作品并装裱带走。<span class="en">Professional calligrapher teaches brush technique, practicing auspicious characters. Each student translates their Khmer name to Chinese characters and creates a personalized framed calligraphy piece to take home.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">11:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">水墨画体验 · 山水与花鸟</span>
+                <span class="act-tag tag-art">艺术 Arts</span>
+              </div>
+              <span class="act-title-en">Chinese Ink Painting Workshop — Landscapes & Birds</span>
+              <p class="act-desc">学习中国传统水墨画基础技法，体验山水与花鸟两种经典题材，完成个人水墨画作品一幅。感受"留白之美"与东方美学。<span class="en">Learn basic traditional Chinese ink painting techniques in landscape and bird-flower genres. Complete one personal ink painting while experiencing the beauty of negative space and Eastern aesthetics.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">中国功夫体验课 · 太极 & 少林拳</span>
+                <span class="act-tag tag-sports">体育 Sports</span>
+              </div>
+              <span class="act-title-en">Chinese Martial Arts — Tai Chi & Shaolin Basics</span>
+              <p class="act-desc">武术教练现场教学太极基础动作与少林基本拳，体验中国武术的"内外兼修"哲学。学员互相对练，拍摄纪念视频。<span class="en">Martial arts instructors teach Tai Chi basics and Shaolin fundamentals. Experience the "mind-body unity" philosophy of Chinese martial arts. Group practice and commemorative video recording.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">19:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">京剧脸谱DIY · 传统戏曲欣赏</span>
+                <span class="act-tag tag-culture">文化 Culture</span>
+              </div>
+              <span class="act-title-en">Peking Opera Mask Painting & Performance Appreciation</span>
+              <p class="act-desc">自己动手绘制京剧脸谱，了解不同颜色代表的人物性格。观赏15分钟京剧经典折子戏，感受中国戏曲艺术之美。<span class="en">Paint your own Peking Opera mask and learn the symbolism of different colors. Watch a 15-minute classical Peking Opera excerpt and appreciate the beauty of Chinese theatrical arts.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 5 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">5</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 5 ·</span>
+              <span class="day-name-cn">科技未来，仰望星辰</span>
+              <span class="day-name-en">Technology & Future — Reaching for the Stars</span>
+            </div>
+            <p class="day-theme">科创探索 · 名校研访 · Innovation & Elite University Experience</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">中国科技馆 · 互动科学体验</span>
+                <span class="act-tag tag-tech">科技 Technology</span>
+              </div>
+              <span class="act-title-en">China Science & Technology Museum — Interactive Learning</span>
+              <p class="act-desc">参观中国国家级科技博物馆，体验航空航天、人工智能、机器人等前沿科技展区。完成STEM研学任务卡，激发科学思维。<span class="en">Visit China's national science museum. Experience cutting-edge exhibits in aerospace, AI, and robotics. Complete STEM study mission cards to stimulate scientific thinking.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">13:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">清华大学 / 北京大学校园参访</span>
+                <span class="act-tag tag-tech">科创 Innovation</span>
+              </div>
+              <span class="act-title-en">Campus Visit — Tsinghua University / Peking University</span>
+              <p class="act-desc">参访中国顶尖高校，漫步校园，了解中国高等教育体系与留学政策。与在读中国大学生进行交流座谈，激发学术志向。<span class="en">Visit China's top universities, tour the campus, and learn about higher education and international admission. Exchange session with Chinese university students to inspire academic aspirations.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">16:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">中柬学生交流活动 · 文化分享会</span>
+                <span class="act-tag tag-intl">国际交流 Exchange</span>
+              </div>
+              <span class="act-title-en">Cambodia-China Student Cultural Exchange Forum</span>
+              <p class="act-desc">与北京当地学生共同参与文化交流活动，柬埔寨学生展示本国文化，中国学生介绍北京传统，互赠文化礼品，建立跨国友谊。<span class="en">Joint cultural exchange with Beijing students. Cambodian students showcase their culture, Chinese students share Beijing traditions. Exchange cultural gifts and build international friendships.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 6 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">6</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 6 ·</span>
+              <span class="day-name-cn">自然人文，皇家御苑</span>
+              <span class="day-name-en">Nature & Heritage — The Imperial Garden</span>
+            </div>
+            <p class="day-theme">自然生态 · 皇家文化 · Royal Garden & Natural Education</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">颐和园皇家园林深度游</span>
+                <span class="act-tag tag-history">历史文化 Heritage</span>
+              </div>
+              <span class="act-title-en">Summer Palace — Imperial Garden Exploration</span>
+              <p class="act-desc">参观世界文化遗产颐和园，游览昆明湖、长廊、佛香阁等核心景观。了解清代皇家园林艺术与造园哲学，体验"天人合一"的东方美学。<span class="en">Explore the UNESCO World Heritage Summer Palace: Kunming Lake, Long Corridor, Tower of Buddhist Incense. Understand Qing dynasty royal garden aesthetics and the philosophy of "harmony between man and nature."</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">12:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">北京动物园 · 大熊猫自然教育</span>
+                <span class="act-tag tag-tech">生态 Ecology</span>
+              </div>
+              <span class="act-title-en">Beijing Zoo — Giant Panda Nature Education</span>
+              <p class="act-desc">近距离观察国宝大熊猫，参与专业讲解员带领的大熊猫保护知识课程。了解濒危物种保护与生态多样性，完成"熊猫观察记录卡"。<span class="en">Observe giant pandas up close, participate in expert-led conservation education. Learn about endangered species protection and biodiversity. Complete "Panda Observation Record Card."</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">18:30</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">正宗北京烤鸭盛宴 · 告别晚宴</span>
+                <span class="act-tag tag-culture">美食 Cuisine</span>
+              </div>
+              <span class="act-title-en">Authentic Peking Duck Feast — Farewell Dinner</span>
+              <p class="act-desc">前往百年老字号享用正宗北京烤鸭，厨师现场片鸭展示。学员分享七天研学感悟，颁发"研学成就卡"，拍摄团体纪念照。<span class="en">Visit a century-old restaurant for authentic Peking Duck. Watch the chef carve the duck tableside. Students share their 7-day reflections, receive "Achievement Cards," and take group commemorative photos.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 7 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div class="day-num">7</div>
+          <div class="day-info">
+            <div class="day-title">
+              <span class="day-label">DAY 7 ·</span>
+              <span class="day-name-cn">凯旋启程，带走北京</span>
+              <span class="day-name-en">Farewell Beijing — Take the World Home</span>
+            </div>
+            <p class="day-theme">结营典礼 · 满载而归 · Closing Ceremony & Homebound Journey</p>
+          </div>
+        </div>
+        <div class="day-activities">
+          <div class="act-item">
+            <div class="act-time">09:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">天坛公园 · 天地礼制探访</span>
+                <span class="act-tag tag-history">历史文化 Heritage</span>
+              </div>
+              <span class="act-title-en">Temple of Heaven — Ritual and Cosmology</span>
+              <p class="act-desc">参观天坛祈年殿，了解中国古代天地祭祀礼仪文化。感受中轴线建筑的对称之美与宇宙哲学。在天坛公园体验晨练文化，观看当地市民打太极、下象棋。<span class="en">Visit the Temple of Heaven's Hall of Prayer, learn about ancient Chinese sky-worship rituals. Witness local morning exercise culture — citizens practicing Tai Chi and playing Chinese chess.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">11:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">结营典礼 · 结业证书颁发</span>
+                <span class="act-tag tag-intl">结营 Closing</span>
+              </div>
+              <span class="act-title-en">Closing Ceremony — Certificate Presentation</span>
+              <p class="act-desc">举行正式结营典礼，颁发"帝都华章探索营"双语结业证书、成绩手册及作品集。学员代表发表感言，播放七天影像回顾短片。<span class="en">Formal closing ceremony with presentation of bilingual completion certificates, achievement booklets, and portfolio collections. Student representative speeches and a 7-day video highlight reel.</span></p>
+            </div>
+          </div>
+          <div class="act-item">
+            <div class="act-time">14:00</div>
+            <div class="act-dot-wrap"><div class="act-dot"></div><div class="act-line"></div></div>
+            <div>
+              <div class="act-header">
+                <span class="act-title">王府井大街 · 自由购物 & 出发</span>
+                <span class="act-tag tag-logistics">后勤 Logistics</span>
+              </div>
+              <span class="act-title-en">Wangfujing Street — Free Shopping & Airport Transfer</span>
+              <p class="act-desc">前往王府井步行街自由购物，选购北京特产及纪念品。专属大巴送往机场，乘坐国际航班返回金边。道别北京，满载而归。<span class="en">Free shopping time at Wangfujing pedestrian street for Beijing specialties and souvenirs. Coach transfer to airport for international flight back to Phnom Penh. Farewell Beijing — homeward bound!</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ HIGHLIGHTS ═══════════════════════ -->
+<section id="highlights" style="background: var(--cream);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Course Highlights</span>
+      <h2 class="section-title-cn">课程亮点</h2>
+      <p class="section-title-en">What Makes This Program Unique</p>
+      <p class="section-desc">六大核心模块，全面覆盖历史、艺术、科技、体能、自然与国际交流，七天研学体验全面升级。</p>
+    </div>
+    <div class="highlights-grid">
+      <div class="hc-card">
+        <div class="hc-icon">🏯</div>
+        <h3 class="hc-title">世界遗产探访</h3>
+        <p class="hc-en">World Heritage Site Visits</p>
+        <p class="hc-desc">一次游览故宫、天坛、颐和园、长城四大世界文化遗产，专业导游深度讲解，含中英双语研学手册，史料丰富。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🎨</div>
+        <h3 class="hc-title">传统艺术工坊</h3>
+        <p class="hc-en">Traditional Arts Workshops</p>
+        <p class="hc-desc">书法、水墨画、京剧脸谱三大工坊亲手体验，每项均完成个人作品并带走，让文化艺术不止于观看。</p>
+      </div>
+      <div class="hc-card dark">
+        <div class="hc-icon">🧱</div>
+        <h3 class="hc-title">长城好汉挑战</h3>
+        <p class="hc-en">Great Wall Hero Challenge</p>
+        <p class="hc-desc">慕田峪长城徒步登顶，颁发"长城好汉纪念证书"，铸就勇气与意志力，成为一段终身难忘的记忆。</p>
+        <span class="hc-badge">纪念证书 Certificate</span>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🚀</div>
+        <h3 class="hc-title">顶尖高校研访</h3>
+        <p class="hc-en">Elite University Campus Visit</p>
+        <p class="hc-desc">走进清华/北大校园，与中国大学生面对面交流，了解中国留学政策，点燃学术梦想，拓展国际视野。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🥋</div>
+        <h3 class="hc-title">中国功夫体验</h3>
+        <p class="hc-en">Chinese Martial Arts Experience</p>
+        <p class="hc-desc">专业武术教练现场授课太极拳与少林基础拳法，体验中国传统武术"内外兼修"的身心哲学。</p>
+      </div>
+      <div class="hc-card">
+        <div class="hc-icon">🌍</div>
+        <h3 class="hc-title">中柬文化交流</h3>
+        <p class="hc-en">Cambodia-China Cultural Exchange</p>
+        <p class="hc-desc">与北京本地学生联合举办文化交流活动，双方展示本国传统文化，互赠礼品，建立跨国友谊与国际人脉。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SAFETY ═══════════════════════ -->
+<section class="safety-section" id="safety">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Safety & Service</span>
+      <h2 class="section-title-cn">安全保障</h2>
+      <p class="section-title-en">Full Safety & Comprehensive Service</p>
+      <p class="section-desc">从金边出发到安全返程，全程专业化运营，让远在柬埔寨的家长安心放心。</p>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card">
+        <span class="safety-icon">🛡️</span>
+        <div class="safety-title">师生配比 1:8</div>
+        <p class="safety-desc">每8名学生配备1名专业辅导员，全程随行贴身照护，紧急情况即时响应。</p>
+        <span class="safety-en">1:8 Teacher-Student Ratio, 24/7 supervision</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">📱</span>
+        <div class="safety-title">家长实时联络</div>
+        <p class="safety-desc">每日发送活动照片与行程动态，建立家长群组，随时沟通，全程安心。</p>
+        <span class="safety-en">Daily photo updates & parent group chat</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🏥</span>
+        <div class="safety-title">医疗急救保障</div>
+        <p class="safety-desc">全程配备急救药箱，行程内含医疗紧急处理预案，保险覆盖全程意外与医疗风险。</p>
+        <span class="safety-en">First-aid kits, emergency protocol & full insurance</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">✈️</span>
+        <div class="safety-title">签证全程协助</div>
+        <p class="safety-desc">专业团队协助办理中国学生签证，出发前家长线上说明会，行前材料全包服务。</p>
+        <span class="safety-en">Full China visa assistance & pre-departure briefing</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🚌</span>
+        <div class="safety-title">专属接送服务</div>
+        <p class="safety-desc">专属大巴全程接送，从金边出发直至安全返程，不使用任何公共交通，安全可靠。</p>
+        <span class="safety-en">Dedicated coach throughout, no public transport</span>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">📸</span>
+        <div class="safety-title">专业影像记录</div>
+        <p class="safety-desc">全程配备专业摄影师跟拍，结营后提供精修相册与研学影像视频，珍藏永久记忆。</p>
+        <span class="safety-en">Professional photographer, post-trip photo album & video</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PRICING ═══════════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="section-inner">
+    <div class="section-header" style="padding-bottom:36px;">
+      <span class="section-tag" style="border-color:rgba(201,168,76,0.5);">Pricing Details</span>
+      <h2 class="section-title-cn" style="color:#fff;">费用说明</h2>
+      <p class="section-title-en">Transparent Pricing — All-Inclusive, No Hidden Fees</p>
+      <p class="section-desc" style="color:rgba(255,255,255,0.4);">一价全包，费用透明，无任何额外收费。<br>All-inclusive price, fully transparent, absolutely no hidden charges.</p>
+    </div>
+    <div class="pricing-wrap">
+      <div class="pricing-card">
+        <div class="price-head">
+          <p class="price-label">
+            每人费用（含国际往返机票及中国签证）
+            <span class="en">Per Person — Including Round-Trip International Flight & China Visa</span>
+          </p>
+          <div class="price-amount">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+              <div>
+                <span class="price-currency">¥</span>
+                <span class="price-number">17,999</span>
+                <span class="price-unit">/人 per person</span>
+              </div>
+              <div style="display:flex;align-items:baseline;gap:4px;">
+                <span style="font-size:14px;color:rgba(255,255,255,0.5);">USD</span>
+                <span class="price-usd" style="font-size:36px;font-weight:700;color:var(--gold-light);">$2,699</span>
+                <span style="font-size:13px;color:rgba(255,255,255,0.4);">/person</span>
+              </div>
+            </div>
+          </div>
+          <p class="price-sub">7日6晚 · 金边⇄北京 · 全程一价全包 · Phnom Penh ⇄ Beijing · 7D6N All-Inclusive</p>
+        </div>
+        <div class="price-body">
+          <div class="includes-col">
+            <div class="col-title">
+              费用包含 ✅
+              <span class="en">What's Included</span>
+            </div>
+            <ul class="inc-list">
+              <li>✈️ 金边—北京 国际往返机票<span class="en">Phnom Penh ↔ Beijing Round-Trip Flight</span></li>
+              <li>🪪 中国旅游签证全程办理<span class="en">China Tourist Visa Application Assistance</span></li>
+              <li>🏨 6晚四星级酒店（双人间）<span class="en">6 Nights 4-Star Hotel (Twin Room)</span></li>
+              <li>🍽️ 全程正餐（早/午/晚）<span class="en">All Meals — Breakfast, Lunch & Dinner</span></li>
+              <li>🎫 所有景点门票（故宫/长城/颐和园等）<span class="en">All Entrance Tickets (Forbidden City, Great Wall, etc.)</span></li>
+              <li>🎨 传统艺术工坊材料费（书法/水墨/脸谱）<span class="en">Arts Workshop Materials (Calligraphy, Painting, Masks)</span></li>
+              <li>🖼️ 装裱书法作品（可带回）<span class="en">Framed Calligraphy Artwork to Take Home</span></li>
+              <li>🥋 中国功夫体验课程费<span class="en">Chinese Martial Arts Class Fee</span></li>
+              <li>📚 中柬双语研学手册<span class="en">Khmer-Chinese Bilingual Study Guide</span></li>
+              <li>🏅 "长城好汉"纪念证书<span class="en">"Great Wall Hero" Commemorative Certificate</span></li>
+              <li>📜 研学结业证书（双语）<span class="en">Bilingual Program Completion Certificate</span></li>
+              <li>🛡️ 全程意外与医疗保险<span class="en">Full Accident & Medical Insurance</span></li>
+              <li>🚌 全程专属大巴接送<span class="en">Dedicated Coach All Transfers</span></li>
+              <li>👨‍🏫 中柬双语辅导员全程陪同<span class="en">Bilingual Guides & Supervisors Throughout</span></li>
+              <li>📸 专业摄影 + 结营相册<span class="en">Professional Photography + Post-Trip Photo Album</span></li>
+            </ul>
+          </div>
+          <div class="excludes-col">
+            <div class="col-title">
+              费用不含 ❌
+              <span class="en">What's Not Included</span>
+            </div>
+            <ul class="exc-list">
+              <li>🧳 个人行李超重费用<span class="en">Personal baggage overweight fees</span></li>
+              <li>🛍️ 个人购物及纪念品费用<span class="en">Personal shopping & souvenirs</span></li>
+              <li>📞 国际漫游电话费<span class="en">International roaming charges</span></li>
+              <li>💊 个人常用药品<span class="en">Personal medication</span></li>
+              <li>🎭 自选额外活动费用<span class="en">Optional extra activity fees</span></li>
+            </ul>
+            <br>
+            <div class="col-title" style="margin-top:16px;">
+              增值服务 ⭐
+              <span class="en">Value-Added Services</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📞 签证顾问跨时区专项咨询
+                <span style="font-size:11px;color:var(--muted);display:block;">Visa consultant cross-timezone advisory</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📩 出发前家长线上说明会
+                <span style="font-size:11px;color:var(--muted);display:block;">Pre-departure online parent briefing session</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                📦 结营成果邮寄（证书+相册+作品）
+                <span style="font-size:11px;color:var(--muted);display:block;">Post-program mailing: certificate + album + artwork</span>
+              </div>
+              <div style="font-size:13px;padding:10px;background:var(--cream);border-radius:8px;">
+                🎬 七天纪录片剪辑视频
+                <span style="font-size:11px;color:var(--muted);display:block;">7-day documentary short film per student</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-extras">
+          <div class="extra-item">
+            📅 每年分批出发，名额有限，先报先得
+            <span class="en">Limited spots per batch, first-come-first-served enrollment</span>
+          </div>
+          <div class="extra-item">
+            👨‍👩‍👧 团体优惠：10人以上报名享专项折扣
+            <span class="en">Group discount available for 10+ participants</span>
+          </div>
+          <div class="extra-item">
+            💳 支持分期付款方案
+            <span class="en">Installment payment plan available</span>
+          </div>
+          <div class="extra-item">
+            🔒 报名后签订正式合同，保障双方权益
+            <span class="en">Formal contract upon enrollment to protect both parties</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-logo-circle">京</div>
+  <p class="footer-brand">帝都华章探索营</p>
+  <p class="footer-sub">BEIJING IMPERIAL HERITAGE DISCOVERY CAMP · CAMBODIA × CHINA</p>
+  <div class="footer-divider"></div>
+  <p class="footer-project">柬埔寨学生北京深度研学项目 · 7日6晚 · ¥17,999/人 · $2,699/person</p>
+  <p class="footer-project" style="margin-top:6px;font-size:12px;color:rgba(255,255,255,0.3);">Cambodia Students Beijing Deep Cultural Study Tour · 7 Days 6 Nights · ¥17,999 per person · $2,699/person</p>
+  <div class="footer-divider"></div>
+  <p class="footer-note">本方案最终解释权归主办方所有 · All rights reserved by the organizer. Final program details subject to change.</p>
+</footer>
+
+</body>
+</html>
